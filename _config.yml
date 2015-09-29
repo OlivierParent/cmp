@@ -3,7 +3,7 @@ title          : CMP
 title_long     : Crossmedia Publishing
 copyright_year : 2015-2016
 copyright_owner: Arteveldehogeschool
-navbar_color   : bg-primary
+colour         : primary
 language       : nl
 baseurl        : "/cmp" # the subpath of your site, e.g. /blog/
 

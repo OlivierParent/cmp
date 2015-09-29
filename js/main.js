@@ -13,18 +13,16 @@
                     var $dropdownItem = $('<div>')
                         .addClass('dropdown-divider');
                 } else {
-                    var $bookMarkIcon = $('<span>')
-                            .addClass('fa fa-bookmark-o'),
-                        $dropdownItem = $('<a>')
-                            .attr('href', '#' + $heading.attr('id'))
-                            .prepend($bookMarkIcon),
-                        $headingLink = $dropdownItem
-                            .clone()
-                            .addClass('heading-link');
+                    var $dropdownItem = $('<a>')
+                        .attr('href', '#' + $heading.attr('id'));
+                    var $headingLink = $dropdownItem.clone().addClass('heading-link fa fa-bookmark-o');
                     $dropdownItem
                         .addClass('dropdown-item')
                         .attr('data-counter', tagName + '-counter')
                         .text($heading.text());
+                    if (tagName === 'h2') {
+                        $dropdownItem.css('font-weight', 'bold');
+                    }
                     $heading.prepend($headingLink);
                 }
                 $dropdownMenu.append($dropdownItem);
@@ -41,5 +39,3 @@
         }
     }
 })();
-
-

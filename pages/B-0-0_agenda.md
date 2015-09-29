@@ -1,7 +1,7 @@
 ---
 layout   : page
-title    : Organisatie
-permalink: organisatie/
+title    : Agenda
+permalink: agenda/
 published: true
 tags     :
 ---
