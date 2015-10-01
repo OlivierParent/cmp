@@ -2,7 +2,7 @@
 layout   : page
 title    : Agenda
 permalink: agenda/
-published: true
+published: false
 tags     :
 ---
 

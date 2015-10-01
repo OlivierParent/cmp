@@ -3,7 +3,7 @@ layout    : page
 title     : Info
 title_long: Algemene informatie
 permalink : opdracht/informatie/
-published : true
+published : false
 tags      :
 ---
 
@@ -16,7 +16,7 @@ tags      :
 ECTS
 ----
 
-[ECTS-fiche van CMP][ects-fiche]{:.btn .btn-primary-outline}
+[ECTS-fiche van CMP][ects-fiche]{:.btn .btn-{{ site.colour }}-outline}
 
 ### Studieomvang
 
