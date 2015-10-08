@@ -42,26 +42,8 @@ De studieomvang bedraagt **6 studiepunten** volgens het [European Credit Transfe
 
 Dit opleidingsonderdeel bouwt verder op deze opleidingsonderdelen:
 
- - Crossmedia Publishing I
- - Crossmedia Publishing II
- - New Media Design & Development I
- - New Media Design & Development II
- - Software Development
  - Webdesign I
  - Webdesign II
- - Web Design & Development I
- - Web Design & Development II
-{% comment %}2016-17
- - Crossmedia Publishing I
- - Crossmedia Publishing II
- - New Media Design & Development I
- - New Media Design & Development II
- - Webdesign I
- - Webdesign II
- - Web Design & Development I
- - Web Design & Development II
- - Web Design & Development III
-{% endcomment %}
 
 ### Competenties
 
