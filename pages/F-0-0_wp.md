@@ -1,21 +1,20 @@
 ---
-layout   : page
-title    : WordPress 4.3
-permalink: wp/
-published: true
-tags     :
+layout    : page
+title     : WordPress
+title_long: WordPress 4.3
+permalink : wp/
+published : true
+tags      :
 ---
 
 {% comment %}
-    ⚓ Afkortingen
+<!-- ⚓ Afkortingen -->
 {% endcomment %}
-
 *[WIP]:                     Work in Progress
 
 {% comment %}
-    ⚓ Hyperlinks
+<!-- ⚓ Hyperlinks -->
 {% endcomment %}
-
 [artevelde]:                http://www.arteveldehogeschool.be
 [bitbucket]:                https://bitbucket.org
 [chamilo]:                  http://chamilo.arteveldehs.be

@@ -268,7 +268,7 @@ Evaluatie
 {:.card .card-block}
 
 {% comment %}
-    ⚓ Hyperlinks
+<!-- ⚓ Hyperlinks -->
 {% endcomment %}
 
 [sf-doc-quicktour]:         http://symfony.com/doc/2.7/quick_tour

@@ -1,6 +1,6 @@
 ---
 layout   : page
-title    : "Code"
+title    : Code
 permalink: styleguide/code/
 published: true
 tags     : styleguide

@@ -1,6 +1,6 @@
 ---
 layout   : page
-title    : "Style Guide"
+title    : Style Guide
 permalink: styleguide/
 published: true
 tags     : styleguide

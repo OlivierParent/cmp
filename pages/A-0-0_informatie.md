@@ -144,15 +144,13 @@ Met weinig complexiteit wordt bedoeld dat het werkstuk niet verder gaat dan de e
 
 
 {% comment %}
-    ⚓ Afkortingen
+<!-- ⚓ Afkortingen -->
 {% endcomment %}
-
 *[ECTS]:                    European Credit Accumulation and Transfer System
 *[OLOD]:                    opleidingsonderdeel
 
 {% comment %}
-    ⚓ Hyperlinks
+<!-- ⚓ Hyperlinks -->
 {% endcomment %}
-
 [ects]:                     http://ec.europa.eu/education/tools/ects_nl.htm
 [ects-fiche]:               https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a=47497&b=5&c=1

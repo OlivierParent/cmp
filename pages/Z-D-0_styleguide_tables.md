@@ -1,6 +1,6 @@
 ---
 layout   : page
-title    : "Tables"
+title    : Tables
 permalink: styleguide/tables/
 published: true
 tags     : styleguide
