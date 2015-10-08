@@ -6,6 +6,9 @@ copyright_owner: Arteveldehogeschool
 colour         : primary
 language       : nl
 baseurl        : "/cmp" # the subpath of your site, e.g. /blog/
+course_platform: http://chamilo.arteveldehs.be/index.php?application=weblcms&go=course_viewer&course=7597
+hipchat_invite : https://www.hipchat.com/g80xXuczp
+hipchat_room   : https://mmp-prodev.hipchat.com/chat/room/1668988
 
 # Build settings
 highlighter: pygments

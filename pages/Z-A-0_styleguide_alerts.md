@@ -1,6 +1,6 @@
 ---
 layout   : page
-title    : "Alerts"
+title    : Alerts
 permalink: styleguide/alerts/
 published: true
 tags     : styleguide
@@ -13,27 +13,37 @@ Alert blocks
 
 > ##### **Tip** *:bulb:*{:.pull-left .m-r}
 > ---
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis blandit arcu, vitae pretium massa cursus vel. Morbi vitae lacinia ex. Vivamus accumsan ornare elit at rhoncus. Duis lacus orci, maximus vel dui sit amet, pellentesque condimentum leo.
+> Lorem ipsum dolor sit amet.
 {:.alert .alert-info}
 
-> ##### **Warning**/**Opgelet** *:warning:*{:.pull-left .m-r}
+> ##### **Remark**|**Opmerking** *:point_up:*{:.pull-left .m-r}
 > ---
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis blandit arcu, vitae pretium massa cursus vel. Morbi vitae lacinia ex. Vivamus accumsan ornare elit at rhoncus. Duis lacus orci, maximus vel dui sit amet, pellentesque condimentum leo.
+> Lorem ipsum dolor sit amet.
+{:.alert .alert-info}
+
+> ##### **Warning**|**Caution**|**Opgelet** *:warning:*{:.pull-left .m-r}
+> ---
+> Lorem ipsum dolor sit amet.
 {:.alert .alert-warning}
 
-> ##### **Example**/**Voorbeeld** *:package:*{:.pull-left .m-r}
+> ##### **Example**|**Voorbeeld** *:package:*{:.pull-left .m-r}
 > ---
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis blandit arcu, vitae pretium massa cursus vel. Morbi vitae lacinia ex. Vivamus accumsan ornare elit at rhoncus. Duis lacus orci, maximus vel dui sit amet, pellentesque condimentum leo.
+> Lorem ipsum dolor sit amet.
 {:.alert .alert-success}
 
 > ##### **Do's** *:thumbsup:*{:.pull-left .m-r}
 > ---
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis blandit arcu, vitae pretium massa cursus vel. Morbi vitae lacinia ex. Vivamus accumsan ornare elit at rhoncus. Duis lacus orci, maximus vel dui sit amet, pellentesque condimentum leo.
+> Lorem ipsum dolor sit amet.
+{:.alert .alert-success}
+
+> ##### **Task**|**Tasks**|**Taak**|**Taken** *:rocket:*{:.pull-left .m-r}
+> ---
+> - Lorem
 {:.alert .alert-success}
 
 > ##### **Don'ts** *:thumbsdown:*{:.pull-left .m-r}
 > ---
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis blandit arcu, vitae pretium massa cursus vel. Morbi vitae lacinia ex. Vivamus accumsan ornare elit at rhoncus. Duis lacus orci, maximus vel dui sit amet, pellentesque condimentum leo.
+> Lorem ipsum dolor sit amet.
 {:.alert .alert-danger}
 
 ### Lesvrije periodes
@@ -74,7 +84,7 @@ Card blocks
 
 ### References
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### See|Zie ook *:books:*{:.pull-left .m-r}
 > ---
 > - [link](#)
 > - [link](#)

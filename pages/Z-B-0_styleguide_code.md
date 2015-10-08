@@ -35,6 +35,14 @@ body {
 variables_order = "EGPCS"
 {% endhighlight %}
 
+### JSON
+
+{% highlight json linenos %}
+[
+    { 'x': 'y' }
+]
+{% endhighlight %}
+
 ### JavaScript
 
 {% highlight js linenos %}
@@ -114,19 +122,102 @@ C:\> dir
 PS> ls
 {% endhighlight %}
 
+Browsers
+--------
+
+### Firefox
+
+> ##### *&nbsp;*{:.fa .fa-firefox}Firefox
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
+> ##### *&nbsp;*{:.fa .fa-firefox}Firefox Developer Edition
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
+### Google Chrome
+
+> ##### *&nbsp;*{:.fa .fa-chrome}Google Chrome
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
+### Internet Explorer
+
+> ##### *&nbsp;*{:.fa .fa-internet-explorer}Internet Explorer
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
+### Opera
+
+> ##### *&nbsp;*{:.fa .fa-opera}Opera
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
+### Safari
+
+> ##### *&nbsp;*{:.fa .fa-safari}Safari
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
+Operating Systems
+-----------------
+
+### Android
+
+> ##### *&nbsp;*{:.fa .fa-android}Android
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
+### iOS
+> ##### *&nbsp;*{:.fa .fa-apple}iOS
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
+### Mac OS X
+> ##### *&nbsp;*{:.fa .fa-apple}Mac OS X
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
+### Windows
+> ##### *&nbsp;*{:.fa .fa-windows}Windows
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
+
 Files
 -----
 
+> ##### Folders & Files/Mappen & Bestanden *:open_file_folder:*{:.pull-left .m-r}
+> ---
 >```
 > nmdad3.arteveldehogeschool.local/
 > ├── app/
 > ├── docs/
-> |   ├── academische_poster.pdf
-> |   ├── checklist.md
-> |   ├── presentatie.pdf
-> |   ├── productiedossier.pdf
-> |   └── timesheet.xslx
+> │   ├── academische_poster.pdf
+> │   ├── checklist.md
+> │   ├── presentatie.pdf
+> │   ├── productiedossier.pdf
+> │   └── timesheet.xslx
 > ├── www/
 > └── README.md
 >```
-{:.highlight}
+{:.card .card-block}

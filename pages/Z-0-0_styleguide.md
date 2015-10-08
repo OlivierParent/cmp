@@ -6,6 +6,11 @@ published: true
 tags     : styleguide
 ---
 
+Bootstrap
+---------
+
+[Bootstrap v4](http://v4-alpha.getbootstrap.com/getting-started/introduction/){:.btn .btn-primary}
+
 Emoji
 -----
 
@@ -23,6 +28,7 @@ FontAwesome
 
  - *&nbsp;*{:.fa .fa-android}Android
  - *&nbsp;*{:.fa .fa-linux}Linux
+ - *&nbsp;*{:.fa .fa-linux}Ubuntu Linux Server
  - *&nbsp;*{:.fa .fa-apple}Mac OS X
  - *&nbsp;*{:.fa .fa-windows}Windows
 
@@ -30,6 +36,7 @@ FontAwesome
 
  - *&nbsp;*{:.fa .fa-chrome}Chrome
  - *&nbsp;*{:.fa .fa-firefox}Firefox
+ - *&nbsp;*{:.fa .fa-firefox}Firefox Developer Edition
  - *&nbsp;*{:.fa .fa-internet-explorer}Internet Explorer
  - *&nbsp;*{:.fa .fa-opera}Opera
  - *&nbsp;*{:.fa .fa-safari}Safari
@@ -58,18 +65,3 @@ FontAwesome
  - *&nbsp;*{:.fa .fa-code}Code
  - *&nbsp;*{:.fa .fa-css3}CSS3
  - *&nbsp;*{:.fa .fa-html5}HTML5
-
-Bootstrap
----------
-
-[Bootstrap v4](http://v4-alpha.getbootstrap.com/getting-started/introduction/){:.btn .btn-primary}
-
-<div class="jumbotron">
-  <h1 class="display-3">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="m-y-md">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>

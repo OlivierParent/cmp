@@ -3,7 +3,7 @@ layout    : page
 title     : Info
 title_long: Algemene informatie
 permalink : opdracht/informatie/
-published : false
+published : true
 tags      :
 ---
 
@@ -85,7 +85,7 @@ De student:
  - Inleiding tot relationele databases en databasemodelling met behulp van MySQL.
  - Inleiding tot PHP en SQL CRUD-operaties via gebonden values.
  - Introductie tot Content Management Systemen.
- - Content Management Systeem (gebaseerd op PHP): lokaal installeren, configureren en gebruiken. Aanmaken van thema's en de functionaliteit van het CMS uitbrei
+ - Content Management Systeem (gebaseerd op PHP): lokaal installeren, configureren en gebruiken. Aanmaken van thema's en de functionaliteit van het CMS uitbreiden.
 
 ### Beoordelingscriteria
 
@@ -107,10 +107,10 @@ Evaluatie
 Voor zowel de eerste als tweede examenkans is de puntenverdeling:
 
  - 66 % Werkstuk 
- - 34 % Mondeling Examen (+ productiedossier en academische poster)
+ - 34 % Mondeling Examen
 
+{% comment %}
 Er wordt onderdelen uit onderstaande tabel gequoteerd.
-
 
 |  100 %    | Onderdeel                              |
 |----------:|:---------------------------------------|
@@ -125,6 +125,7 @@ Er wordt onderdelen uit onderstaande tabel gequoteerd.
 |   20 %    |   6. Backoffice                        |
 |   12 %    |   7. Databasemodel                     |
 {:.table}
+{% endcomment %}
 
 ### Beoordelingsschaal
 
@@ -145,6 +146,7 @@ Per onderdeel van het werkstuk wordt een score toegekend. Deze score bestaat uit
 
 Met weinig complexiteit wordt bedoeld dat het werkstuk niet verder gaat dan de eenvoudige voorbeelden uit de les.
 
+{% comment %}
 ### Bijkomende voorwaarden
 
 > ##### **Opgelet** *:warning:*{:.pull-left .m-r}
@@ -156,6 +158,7 @@ Met weinig complexiteit wordt bedoeld dat het werkstuk niet verder gaat dan de e
 > - Spellingsfouten in het werkstuk, presentatie en/of poster: -1 (op 20) op eindscore.
 > - Na de deadline indienen zonder geldige reden: -2 (op 20) op eindscore.
 {:.alert .alert-warning}
+{% endcomment %}
 
 
 {% comment %}
@@ -170,4 +173,4 @@ Met weinig complexiteit wordt bedoeld dat het werkstuk niet verder gaat dan de e
 {% endcomment %}
 
 [ects]:                     http://ec.europa.eu/education/tools/ects_nl.htm
-[ects-fiche]:               https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a=47526&b=5&c=1
+[ects-fiche]:               https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a=47497&b=5&c=1
