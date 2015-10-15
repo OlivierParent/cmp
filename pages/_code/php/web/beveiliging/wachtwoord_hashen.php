@@ -1,4 +1,4 @@
-<php
+<?php
  
 /**
  * Hasht wachtwoord met het Blowfish hashalgoritme.
