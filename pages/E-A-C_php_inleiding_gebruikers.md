@@ -72,6 +72,7 @@ CMS
 ---
 
  - [Anchor](http://anchorcms.com)
+ - [Bolt](https://bolt.cm)
  - [Drupal](http://drupal.org)[^fig]
  - [ExpressionEngine](http://expressionengine.com) door [EllisLab][ellislab] (commercieel)
  - [Fork CMS](http://www.fork-cms.com) door [Wijs][wijs]
