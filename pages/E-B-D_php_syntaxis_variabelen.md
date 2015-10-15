@@ -17,14 +17,21 @@ Per conventie wordt aangeraden om:
  - maar lowerCamelCase[^1];
  - cijfers te vermijden.
 
-basis/variabele/variabele.php
- 
+{% highlight php %}
+<!-- basis/variabele/variabele.php -->
+{% include_relative _code/php/basis/variabele/variabele.php %}
+{% endhighlight %}
+
 Lege variabelen
 ---------------
 
 Met de functie `empty()` kun je bepalen of een variabele leeg is of een waarde heeft die daarmee overeenkomt. Om te bepalen of een variabele een waarde toegewezen heeft gekregen gebruik je de functie `isset()`.
 
-basis/variabele/leeg.php
+{% highlight php %}
+<!-- basis/variabele/leeg.php -->
+{% include_relative _code/php/basis/variabele/leeg.php %}
+{% endhighlight %}
+
 
 {% comment %}
 <!-- ⚓ Voetnoten -->

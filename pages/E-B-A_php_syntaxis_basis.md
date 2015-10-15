@@ -10,31 +10,49 @@ Codeafbakening
 --------------
 PHP wordt vaak in combinatie met HTML gebruikt. Om de PHP-parser het onderscheid tussen HTML- en PHP-code duidelijk te maken, wordt de code afgebakend met speciale tags. Alles wat buiten deze tags staat wordt door de parser genegeerd.
 
-{% gist 71c2a32bcd663184ce77 basis_codeafbakening.php %}
+{% highlight php %}
+<!-- basis/codeafbakening/html.php -->
+{% include_relative _code/php/basis/codeafbakening/html.php %}
+{% endhighlight %}
 
 Voor bestanden die enkel PHP bevatten (dus geen HTML of dergelijke) wordt aangeraden om geen eindtag te gebruiken (`?>`). PHP vereist dit niet, en het heeft als bijkomend voordeel dat er geen onnodige witruimte aan het serverantwoord toegevoegd wordt. Het is wel aangeraden om als laatste lijn een lege regel te hebben.
 
-basis/codeafbakening/php.php
+{% highlight php %}
+<!-- basis/codeafbakening/php.php -->
+{% include_relative _code/php/basis/codeafbakening/php.php %}
+{% endhighlight %}
 
 Er bestaan nog andere tags, waaronder de populaire **snelschriftversie** en ASP-stijl. Het gebruik ervan wordt echter afgeraden, omdat de ondersteuning ervoor afhankelijk is van de serverinstellingen en er dus voor kan zorgen dat je scripts niet op om het even welke server zullen werken.
 
-<mark>De snelschriftversie wordt sinds **PHP versie 5.4** standaard ondersteund, zodat het niet langer afhankelijk is van de serverinstellingen.</mark>
+> ##### **Opmerking** *:point_up:*{:.pull-left .m-r}
+> ---
+> De snelschriftversie wordt sinds **PHP versie 5.4** standaard ondersteund, zodat het niet langer afhankelijk is van de serverinstellingen.
+{:.alert .alert-info}
 
-basis/codeafbakening/snelschrift.php
+{% highlight php %}
+<!-- basis/codeafbakening/snelschrift.php -->
+{% include_relative _code/php/basis/codeafbakening/snelschrift.php %}
+{% endhighlight %}
 
 Opdrachtbeëindiging
 -------------------
 
 Net zoals in andere op C-gebaseerde programmeertalen[^1], wordt elke opdracht (**statement**) beëindigd met een **puntkomma** (`;`). Je kan een opdracht dus over verschillende regels te spreiden.
 
-basis/opdrachtbeëindiging.php
+{% highlight php %}
+<!-- basis/opdrachtbeeindiging.php -->
+{% include_relative _code/php/basis/opdrachtbeeindiging.php %}
+{% endhighlight %}
 
 Commentaar
 ----------
 
 PHP ondersteunt twee manieren van commentaar schrijven: de C-stijl en de Unix-shell-stijl. Deze laatste stijl is een overblijfsel uit de periode dat een deel van PHP bestond uit [Perl][perl]-scripts. De voorkeur gaat dus uit naar de C-stijl. De Unix-shell-stijl kan handig zijn om een lijn code tijdelijk in commentaar te zetten, zodat het onderscheid tussen permanente commentaar en tijdelijke commentaar duidelijk is.
 
-basis/commentaar/commentaar.php
+{% highlight php %}
+<!-- basis/commentaar/commentaar.php -->
+{% include_relative _code/php/basis/commentaar/commentaar.php %}
+{% endhighlight %}
 
 ### Documentatietools
 
@@ -54,10 +72,13 @@ Enkele fequent gebruikte [tags][phpdoc-tags] voor PHPDocumentor 2:
  - `@var`
  - `@version`
  - …
- 
+
 Een voorbeeld van een fancy PhpDoc-blok
 
-basis/commentaar/phpdoc.php
+{% highlight php %}
+<!-- basis/commentaar/phpdoc.php -->
+{% include_relative _code/php/basis/commentaar/phpdoc.php %}
+{% endhighlight %}
 
 Code importeren
 ---------------
@@ -72,9 +93,15 @@ Om code te importeren kun je kiezen uit `include` en `require`. Het verschil zit
 
 Bij een modulair opgebouwde toepassing kan het zijn dat er meerdere keren dezelfde code geïmporteerd wordt, ook al mag die code maar één keer voorkomen (zoals bijvoorbeeld een klassedeclaratie). Hiervoor bestaan `include_once` en `require_once`.
 
-basis/importeren/inhoud.php
+{% highlight php %}
+<!-- basis/importeren/inhoud.php -->
+{% include_relative _code/php/basis/importeren/inhoud.php %}
+{% endhighlight %}
 
-basis/importeren/include.phpPHP
+{% highlight php %}
+<!-- basis/importeren/include.php -->
+{% include_relative _code/php/basis/importeren/include.php %}
+{% endhighlight %}
 
 De geïmporteerde code erft het **variabelenbereik** van de lijn code waarop het aangeroepen wordt.
 

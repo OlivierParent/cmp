@@ -16,7 +16,10 @@ Per conventie wordt aangeraden om:
  - liggende streepjes te gebruiken om woorden in de naam te scheiden en dit consequent toe te passen;
  - constanten als klasseconstante te definiëren (zie hoofdstuk Objectgeoriënteerd Programmeren).
 
-basis/constante.php
+{% highlight php %}
+<!-- basis/constante.php -->
+{% include_relative _code/php/basis/constante.php %}
+{% endhighlight %}
 
 Er zijn een aantal ingebouwde constanten zoals `PHP_EOL` *(End Of Line* teken: `\n`) en er zijn ook ‘Magische’ constanten die beginnen en eindigen met twee underscores, bijvoorbeeld `__FILE__`.
 

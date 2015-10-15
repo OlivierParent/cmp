@@ -8,10 +8,10 @@ tags     :
 
 en programmeertaal dient in essentie om gegevens te manipuleren. In PHP bestaan gegevens uit slechts 8 datatypes. Het datatype van een gegeven bepaalt welke manipulaties er op uitgevoerd kunnen worden. De 8 datatypes zijn onder te verdelen in 3 soorten:
 
- - Scalaire datatypes: [Boolean](#boolean), [Integer][], [Float][] en [String][];
- - Samengestelde datatypes: [Array][] en [Object][];
- - Bijzondere datatypes: [Resource] en [`null`]. - 
- 
+ - Scalaire datatypes: [Boolean](#boolean), [Integer](#integer), [Float](#float) en [String](#string);
+ - Samengestelde datatypes: [Array](#array) en [Object](#object);
+ - Bijzondere datatypes: [Resource](#resource) en [`null`](#null).
+
 Scalaire datatypes
 ------------------
 
@@ -21,25 +21,37 @@ Deze types kunnen slechts één waarde bevatten en kunnen als de elementaire dat
 
 De booleaanse waarde is ofwel waar of onwaar. Om die status aan te geven worden de sleutelwoorden `true` en `false` gebruikt.
 
-basis/datatype/scalair/boolean.php
+{% highlight php %}
+<!-- basis/datatype/scalair/boolean.php -->
+{% include_relative _code/php/basis/datatype/scalair/boolean.php %}
+{% endhighlight %}
 
 ### Integer
 
 Een geheel getal in PHP kan ofwel decimaal (10-delig), octaal (8-delig) of hexadecimaal (16-delig) zijn.
 
-basis/datatype/scalair/integer.php
+{% highlight php %}
+<!-- basis/datatype/scalair/integer.php -->
+{% include_relative _code/php/basis/datatype/scalair/integer.php %}
+{% endhighlight %}
 
 ### Float
 
 Een floating point of een drijvendekommagetal[^1] kan met een exponentiële notatie geschreven met een hoofdletterongevoelige `E`.
 
-basis/datatype/scalair/float.php
+{% highlight php %}
+<!-- basis/datatype/scalair/float.php -->
+{% include_relative _code/php/basis/datatype/scalair/float.php %}
+{% endhighlight %}
 
 ### String
 
 In PHP kan je een tekenstring met zowel een **apostrof** (`'`) als een **aanhalingsteken** (`"`) definiëren. Met een apostroffen maak je een tekenconstante (Eng: *string literal*), terwijl aanhalingstekens ook **variabeleninterpolatie** (**variabelensubstitutie**) ondersteunen.
 
-basis/datatype/scalair/tekenstring.php
+{% highlight php %}
+<!-- basis/datatype/scalair/tekenstring.php -->
+{% include_relative _code/php/basis/datatype/scalair/tekenstring.php %}
+{% endhighlight %}
 
 Omdat er in een tekenconstante nooit naar variabelen gezocht wordt, is dat net ietsje sneller en geniet het in de meeste gevallen dan ook de voorkeur[^2].
 
@@ -75,29 +87,41 @@ Een lege array maak je door `[]` toe te wijzen aan een variabele.
 
 Bij een **enumeratieve array** worden de sleutels automatisch aangemaakt. De eerste sleutel wordt dan `0`, de volgende sleutel `1` enz.
 
-basis/datatype/samengesteld/array/enumeratief.php
+{% highlight php %}
+<!-- basis/datatype/samengesteld/array/enumeratief.php -->
+{% include_relative _code/php/basis/datatype/samengesteld/array/enumeratief.php %}
+{% endhighlight %}
 
 #### Associatieve array
 
 Bij een **associatieve** array ken je zelf een sleutel toe. Sleutels in arrays zijn hoofdlettergevoelig, maar typeongevoelig. Bij het definiëren of opvragen van een sleutel wordt, indien mogelijk, ook een typeconversie naar integer gedaan. Indien dat niet lukt, wordt de sleutel een string.
 
-basis/datatype/samengesteld/array/associatief.php
+{% highlight php %}
+<!-- basis/datatype/samengesteld/array/associatief.php -->
+{% include_relative _code/php/basis/datatype/samengesteld/array/associatief.php %}
+{% endhighlight %}
 
 #### Combinatie van beide soorten arrays
 
 Enumeratief en associatief kunnen ook samen gebruikt worden.
 
-basis/datatype/samengesteld/array/combinatie.php
+{% highlight php %}
+<!-- basis/datatype/samengesteld/array/combinatie.php -->
+{% include_relative _code/php/basis/datatype/samengesteld/array/combinatie.php %}
+{% endhighlight %}
 
 #### Multidimensionele array
 
 De waarden in een array kunnen zelf ook een array zijn. In dat geval spreekt men over mutidimensionale arrays.
 
-basis/datatype/samengesteld/array/multidimensioneel.php
+{% highlight php %}
+<!-- basis/datatype/samengesteld/array/multidimensioneel.php -->
+{% include_relative _code/php/basis/datatype/samengesteld/array/multidimensioneel.php %}
+{% endhighlight %}
 
 #### Oude syntaxis
 
-Sinds PHP 5.4 wordt een verkorte syntaxis voor arrays gebruikt. De oude syntaxis wordt nog vaak gebruikt om de code compatibel te houden met oudere versies van PHP. Ondertussen is PHP 5.3 end of life verklaard en zal in de nabije toekomst volledig verdwijnen.
+Sinds PHP 5.4 wordt een verkorte syntaxis voor arrays gebruikt. De oude syntaxis wordt nog vaak gebruikt om de code compatibel te houden met oudere versies van PHP. Ondertussen is PHP 5.3 *end of life* verklaard en zal in de nabije toekomst volledig verdwijnen.
 
 ### Object
 
@@ -113,7 +137,6 @@ Een resource is een variabele met een referentie naar een externe gegevensbron .
 ### `null`
 
 Dit bijzondere type is het datatype van de waarde null. Een variabele met deze waarde is in feite een variabele waaraan nog geen waarde toegewezen is.
-
 
 Typebepaling
 ------------
@@ -133,7 +156,10 @@ Het type van een variabele kan met behulp van functies getest worden, deze funct
 | `is_null()`     | `null`                                                           |
 {:.table}
 
-basis/datatype/typebepaling.php
+{% highlight php %}
+<!-- basis/datatype/typebepaling.php -->
+{% include_relative _code/php/basis/datatype/typebepaling.php %}
+{% endhighlight %}
 
 Typeconversie *(Casting)*
 -------------------------
@@ -142,7 +168,10 @@ Typeconversie *(Casting)*
 
 PHP is een taal met zwakke typering, het is zelfs niet mogelijk om een variabele te declareren als zijnde van een bepaald type. Welk type een bepaalde waarde heeft hangt af van de waarde en de context waarin deze waarde gebruikt wordt. Zo zal een string bij een optelling automatisch naar een integer of float geconverteerd worden.
 
-basis/datatype/typeconversie/impliciet.php
+{% highlight php %}
+<!-- basis/datatype/typeconversie/impliciet.php -->
+{% include_relative _code/php/basis/datatype/typeconversie/impliciet.php %}
+{% endhighlight %}
 
 ### Expliciete typeconversie *(Explicit Cast)*
 

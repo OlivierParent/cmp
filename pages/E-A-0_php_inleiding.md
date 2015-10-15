@@ -12,12 +12,12 @@ De lage instapdrempel en de losse structuur van de taal zijn een zegen in handen
 
 Het Nederlandse bedrijf TIOBE Software BV maakt al meer dan 10 jaar een maandelijkse index op van de 50 populairste programmeertalen: de [TPCI](http://www.tiobe.com/index.php/content/paperinfo/tpci/). Om hun ratings op te stellen, maken ze gebruik van Google, MSN, Yahoo!, Wikipedia en YouTube. Deze ratings zijn enkel maar een indicator voor de populariteit, niet voor de werkelijke gebruikscijfers.
 
-[fig]
+<img alt="TIOBE Programming Community Index" title="TIOBE Programming Community Index" src="https://docs.google.com/spreadsheet/oimg?key=0ArU4mtrGp5vKdEJBbnFWZFB3RllyUl9WVmt6WEtmZkE&amp;oid=1&amp;zx=ouj0teg8sgqb">
 
 Zo kunnen we op de bovenstaande grafiek zien dat PHP in februari 2013 de populairste scripttaal is en de 6de populairste programmeertaal algemeen. De dalende populariteit is waarschijnlijk eerder te wijten aan het sterk groeiende belang van mobiele besturingssystemen Android (Java) en iOS (Objective-C) dan aan een verminderde belangstelling voor PHP.
 
 Relevanter is echter het werkelijk gebruik op webservers. De afdeling W3Techs.com van het Oostenrijkse bedrijf Q-Success houdt dagelijkse statistieken bij van het [gebruikt van server-side technologie](http://w3techs.com/technologies/overview/programming_language/all) op de top 1 miljoen websites.
 
-[fig]
+<img alt="W3Techs.com Usage Statistics" title="W3Techs.com Usage Statistics" src="https://docs.google.com/spreadsheet/oimg?key=0ArU4mtrGp5vKdEJBbnFWZFB3RllyUl9WVmt6WEtmZkE&amp;oid=2&amp;zx=nzp8ozfp4s58">
 
 In bovenstaande grafiek zien we dat PHP met 78,8% met ruime voorsprong de 20,1% van ASP.NET overtreft en dat de kloof nog groter wordt.

@@ -11,7 +11,7 @@ Code
 
 ### CSS
 
-{% highlight css linenos %}
+{% highlight css linenos=table linenostart=0 hl_lines=1 %}
 body {
     font-family: sans-serif;
 }

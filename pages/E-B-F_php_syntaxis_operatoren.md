@@ -19,7 +19,10 @@ In PHP kunnen de operatoren opgedeeld worden volgens het aantal operanden:
 
 ### Unaire operatoren
 
-basis/operator/unair.php
+{% highlight php %}
+<!-- basis/operator/unair.php -->
+{% include_relative _code/php/basis/operator/unair.php %}
+{% endhighlight %}
 
 > ##### **Tip** *:bulb:*{:.pull-left .m-r}
 > ---
@@ -28,13 +31,19 @@ basis/operator/unair.php
 
 ### Binaire operatoren
 
-basis/operator/binair.php
- 
+{% highlight php %}
+<!-- basis/operator/binair.php -->
+{% include_relative _code/php/basis/operator/binair.php %}
+{% endhighlight %}
+
 ### Ternaire operator
 
 De enige ternaire operator is de conditionele operator. Deze zeer vaak toegepaste operator is eigenlijk een verkorte versie van een `if` … `else` … lus.
 
-basis/operator/ternair.php
+{% highlight php %}
+<!-- basis/operator/ternair.php -->
+{% include_relative _code/php/basis/operator/ternair.php %}
+{% endhighlight %}
 
 Operatorprioriteit
 ------------------
