@@ -11,17 +11,15 @@ Het is mogelijk om opdrachten aan het besturingssysteem te geven via de functie 
 Windows
 -------
 
-shell_win.php
+{% highlight php %}
+<!-- shell/win.php -->
+{% include_relative _code/php/shell/win.php %}
+{% endhighlight %}
 
-<?php
-$res = shell_exec('dir'); // Lijst alle bestanden op
-echo "<pre>{$res}";
- 
 Linux, Unix & Mac OS X
 ----------------------
 
-shell_nix.php
-
-<?php
-$res = shell_exec('ls -l'); // Lijst alle bestanden op
-echo "<pre>{$res}";
+{% highlight php %}
+<!-- shell/nix.php -->
+{% include_relative _code/php/shell/nix.php %}
+{% endhighlight %}
