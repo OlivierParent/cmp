@@ -12,7 +12,7 @@ Ontwikkelingsomgeving
 
 Installeer:
 
-[Artevelde Laravel Homestead][artestead]{:.btn .btn-{{ site.colour }}}
+[[*&nbsp;*{:.fa .fa-download}Artevelde Laravel Homestead][artestead]{:.btn .btn-{{ site.colour }}}
 
 PHP-informatie
 --------------
@@ -33,4 +33,4 @@ Om informatie over een specifieke PHP-installatie op te vragen, gebruik je de fu
 {% comment %}
 <!-- ⚓ Hyperlinks -->
 {% endcomment %}
-[artestead]:                http://www.olivierparent.be/artestead/
+[artestead]:                http://www.olivierparent.be/artestead/installation/
