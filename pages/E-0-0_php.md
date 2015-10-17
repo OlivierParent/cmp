@@ -12,7 +12,7 @@ Ontwikkelingsomgeving
 
 Installeer:
 
-[[*&nbsp;*{:.fa .fa-download}Artevelde Laravel Homestead][artestead]{:.btn .btn-{{ site.colour }}}
+[*&nbsp;*{:.fa .fa-download}Artevelde Laravel Homestead][artestead]{:.btn .btn-{{ site.colour }}}
 
 PHP-informatie
 --------------
