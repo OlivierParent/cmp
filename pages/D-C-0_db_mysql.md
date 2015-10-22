@@ -6,6 +6,14 @@ published: true
 tags     :
 ---
 
+***Structured Query Language*** is een gestandaardiseerde taal om gegevens te beheren in een (relationele) database.
+
+Het net zoals HTML een **declaratieve** taal. Dit wil zeggen dat het beschrijft **wat** er moet gebeuren, niet hoe het moet gebeuren.
+
+In deze cursus gaan we de populaire opensource databaseserver [MySQL 5.6][mysql-doc] van [Oracle][oracle] gebruiken. Er is ook een opensource kloon van de hand van de oorspronkelijke maker van MySQL: [MariaDB](https://mariadb.org/).
+
+> **Weetjes:** *My* en *Maria* zijn de twee dochters van Michael Widenius. Vandaar de namen MySQL en MariaDB. Widenius is de medeoprichter van [MySQL AB][mysql] de Fins-Zweedse firma achter MySQL. De firma werd overgenomen door Sun Microsystems die later op zijn beurt door Oracle werd overgenomen. Uit onvrede hierover creëerde Widenius het opensource alternatief MariaDB.
+
 {% comment %}
 <!-- ⚓ Afkortingen -->
 {% endcomment %}
@@ -14,16 +22,7 @@ tags     :
 {% comment %}
 <!-- ⚓ Hyperlinks -->
 {% endcomment %}
-[artevelde]:                http://www.arteveldehogeschool.be
-[bitbucket]:                https://bitbucket.org
-[chamilo]:                  http://chamilo.arteveldehs.be
-[docent-opr]:               http://www.olivierparent.be
-[docent-opr-bitbucket]:     https://bitbucket.org/olivierparent
-[docent-opr-mail]:          mailto:olivier.parent@arteveldehs.be?subject=NMDAD3
-[docent-pdp]:               http://www.olivierparent.be
-[docent-pdp-bitbucket]:     https://bitbucket.org/drdynscript
-[docent-pdp-mail]:          mailto:philippe.depauw@arteveldehs.be?subject=NMDAD3
-[ects]:                     http://ec.europa.eu/education/tools/ects_nl.htm
-[ects-fiche]:				https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a=47526&b=5&c=1
-[hipchat]:                  https://www.hipchat.com/g0wZaWEvE
-[teamviewer]:               https://www.teamviewer.com/nl/index.aspx
+[mariadb]:                  
+[mysql]:                    http://www.mysql.com/
+[mysql-doc]:                http://dev.mysql.com/doc/refman/5.6/en/
+[oracle]:                   http://www.oracle.com/be/index.html
