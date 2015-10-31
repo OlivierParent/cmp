@@ -8,7 +8,7 @@ tags     :
 
 > ##### **Opgelet** *:warning:*{:.pull-left .m-r}
 > ---
-> - **PDF**-bestand te plaatsen op Bitbucket-repository.
+> - **PDF**-bestand in te dienen samen met de code.
 {:.alert .alert-warning}
 
 Inhoud
@@ -22,10 +22,6 @@ Inhoud
  - Academiejaar
  …
 
-### Repository
-
-Link naar het Bitbucket-repository.
-
 ### Briefing
 
 Korte samenvatting van de opdracht.
@@ -38,7 +34,7 @@ Vertrek vanaf de beschikbare tijd en maak een retroplanning vanaf de deadline.
 
 #### Ideaboard
 
-Collage van ideeën voor de functionaliteiten van zowel de app als de backoffice.
+Collage van ideeën voor de functionaliteiten.
 
 #### Moodboard
 
@@ -56,31 +52,8 @@ Minstens 3 uitgesproken verschillende [Style Tiles][style-tiles]. en duid aan we
 
 ### Werkstuk
 
-#### Databasemodel
-
- - Diagram van het databasemodel  
-   [MySQL Workbench][mysql-workbench]: **Database** → **Reverse Engineer…**
-
-#### API
-
- - Functionaliteiten
-
-#### Mobile Hybrid App
-
- - Functionaliteiten
- - Wireflow
- - Screen Designs
-
-#### Backoffice
-
- - Functionaliteiten
- - Sitemap
- - Wireframes
- - Screen Designs
 
 {% comment %}
-    ⚓ Hyperlinks
+<!-- ⚓ Hyperlinks -->
 {% endcomment %}
-
-[mysql-workbench]:          http://dev.mysql.com/downloads/workbench
 [style-tiles]:              http://styletil.es

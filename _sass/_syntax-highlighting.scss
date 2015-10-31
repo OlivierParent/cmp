@@ -17,20 +17,25 @@
 }
 
 $code-text-color: white;
-$code-bash: $color-A;
-$code-bat: $color-A;
-$code-code: $color-A;
-$code-css: $color-C;
-$code-html: $color-B;
-$code-js: $color-D;
-$code-php: $color-G;
-$code-ps: $color-A;
-$code-scss: $color-H;
-$code-ts: $color-F;
-$code-twig: $color-E;
-$code-yaml: $color-D;
+$code-bash   : $color-A;
+$code-bat    : $color-A;
+$code-code   : $color-A;
+$code-css    : $color-C;
+$code-gherkin: $color-E;
+$code-html   : $color-B;
+$code-ini    : $color-A;
+$code-json   : $color-A;
+$code-js     : $color-D;
+$code-php    : $color-G;
+$code-ps     : $color-A;
+$code-sql    : $color-F;
+$code-scss   : $color-H;
+$code-ts     : $color-F;
+$code-twig   : $color-E;
+$code-yaml   : $color-D;
 
-div.highlight {
+div.highlight,
+div.linenodiv {
     margin: 2rem 0;
     overflow: auto;
     pre {
@@ -53,8 +58,17 @@ div.highlight {
                 &css {
                     @include label("CSS", $code-css, $code-text-color);
                 }
+                &gherkin {
+                    @include label("Gherkin", $code-gherkin, $code-text-color);
+                }
                 &html {
                     @include label("HTML", $code-html, $code-text-color);
+                }
+                &ini {
+                    @include label("INI", $code-ini, $code-text-color);
+                }
+                &json {
+                    @include label("JSON", $code-json, $code-text-color);
                 }
                 &js {
                     @include label("JS", $code-js, $code-text-color);
@@ -70,6 +84,9 @@ div.highlight {
                 }
                 &scss {
                     @include label("SCSS", $code-scss, $code-text-color);
+                }
+                &sql {
+                    @include label("SQL", $code-sql, $code-text-color);
                 }
                 &ts {
                     @include label("TS", $code-ts, $code-text-color);

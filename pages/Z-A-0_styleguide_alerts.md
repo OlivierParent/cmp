@@ -16,6 +16,11 @@ Alert blocks
 > Lorem ipsum dolor sit amet.
 {:.alert .alert-info}
 
+> ##### **Did you know?**|**Weetje** *:book:*{:.pull-left .m-r}
+> ---
+> Lorem ipsum dolor sit amet.
+{:.alert .alert-info}
+
 > ##### **Remark**|**Opmerking** *:point_up:*{:.pull-left .m-r}
 > ---
 > Lorem ipsum dolor sit amet.

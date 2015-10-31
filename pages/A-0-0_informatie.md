@@ -79,7 +79,7 @@ De student:
  - kan een CMS installeren, configureren en gebruiken. 
  - kan een thema voor het CMS maken en de functionaliteit uitbreiden.
 
-De student verdedigt mondeling het werkstuk. 
+De student verdedigt mondeling het werkstuk.
 
 Evaluatie
 ---------
@@ -89,25 +89,24 @@ Evaluatie
 Voor zowel de eerste als tweede examenkans is de puntenverdeling:
 
  - 66 % Werkstuk 
- - 34 % Mondeling Examen
+ - 34 % Mondeling examen
 
-{% comment %}
-Er wordt onderdelen uit onderstaande tabel gequoteerd.
+Er wordt gequoteerd op onderdelen uit onderstaande tabel.
 
-|  100 %    | Onderdeel                              |
-|----------:|:---------------------------------------|
-| **34 %**  | **Mondeling examen**                   |
-|   10 %    |   1. Presentatie                       |
-|   18 %    |   2. Productiedossier                  |
-|    6 %    |   3. Academische Poster                |
-|----------------------------------------------------|
-| **66 %**  | **Werkstuk**                           |
-|   20 %    |   4. Mobile Hybrid App                 |
-|   14 %    |   5. Application Programming Interface |
-|   20 %    |   6. Backoffice                        |
-|   12 %    |   7. Databasemodel                     |
+|  100 %    | Onderdeel                                                 |
+|----------:|:----------------------------------------------------------|
+| **34 %**  | **Mondeling examen**                                      |
+|   12 %    |   1. Presentatie en verzorgd taalgebruik                  |
+|   12 %    |   2. Aangetoonde kennis                                   |
+|   12 %    |   3. Professionele werkwijze gevolgd                      |
+|-----------------------------------------------------------------------|
+| **66 %**  | **Werkstuk**                                              |
+|   15 %    |   4. Grafisch verzorgd, eigentijds en gebruiksvriendelijk |
+|   12 %    |   5. Creativiteit en orginaliteit                         |
+|   25 %    |   6. Technische specificaties en correct functioneren     |
+|   12 %    |   7. Technische complexiteit en moeilijkheidsgraad        |
+|  +10 %    |   8. Eventuele extra’s                                    |
 {:.table}
-{% endcomment %}
 
 ### Beoordelingsschaal
 
@@ -128,26 +127,17 @@ Per onderdeel van het werkstuk wordt een score toegekend. Deze score bestaat uit
 
 Met weinig complexiteit wordt bedoeld dat het werkstuk niet verder gaat dan de eenvoudige voorbeelden uit de les.
 
-{% comment %}
-### Bijkomende voorwaarden
-
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
-> ---
-> Met onderstaande voorwaarden moet je ook rekening houden:
->
-> - Per onvoldoende op een van de gequoteerde onderdelen wordt de eindscore (op 20) met 1 verminderd, maar niet lager dan 6/20.
-> - Als een vereist item uit de [Checklist](/opdracht/checklist/){:.alert-link} ontbreekt, kan de eindscore nog maximaal 8/20 zijn.
-> - Spellingsfouten in het werkstuk, presentatie en/of poster: -1 (op 20) op eindscore.
-> - Na de deadline indienen zonder geldige reden: -2 (op 20) op eindscore.
-{:.alert .alert-warning}
-{% endcomment %}
-
 
 {% comment %}
 <!-- ⚓ Afkortingen -->
 {% endcomment %}
 *[ECTS]:                    European Credit Accumulation and Transfer System
+*[CMS]:                     Content Management System
+*[CRUD]:                    Create, Read, Update, and Delete
+*[HTTP]:                    Hypertext Transfer Protocol
 *[OLOD]:                    opleidingsonderdeel
+*[PHP]:                     PHP: Hypertext Preprocessor
+*[SQL]:                     Structured Query Language
 
 {% comment %}
 <!-- ⚓ Hyperlinks -->
