@@ -131,7 +131,7 @@ Met weinig complexiteit wordt bedoeld dat het werkstuk niet verder gaat dan de e
 {% comment %}
 <!-- ⚓ Afkortingen -->
 {% endcomment %}
-*[ECTS]:                    European Credit Accumulation and Transfer System
+*[ECTS]:                    European Credit Transfer and Accumulation System
 *[CMS]:                     Content Management System
 *[CRUD]:                    Create, Read, Update, and Delete
 *[HTTP]:                    Hypertext Transfer Protocol
