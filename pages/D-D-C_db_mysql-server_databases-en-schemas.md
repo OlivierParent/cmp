@@ -239,4 +239,4 @@ Enter password: _
 {% comment %}
 <!-- ⚓ Afkortingen -->
 {% endcomment %}
-*[DBMS]:                    Database Management System
+*[DBMS]:                    Databasemanagementsysteem

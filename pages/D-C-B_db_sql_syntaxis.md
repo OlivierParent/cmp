@@ -93,8 +93,11 @@ Deze statements hebben een speciaal nut.
 {% comment %}
 <!-- ⚓ Afkortingen -->
 {% endcomment %}
+*[DDL]:                     Data Definition Language
+*[DML]:                     Data Manipulation Language
 *[RDBMS]:                   Relationeel Databasemanagementsysteem
 *[SQL]:                     Structured Query Language
+
 
 {% comment %}
 <!-- ⚓ Hyperlinks -->
