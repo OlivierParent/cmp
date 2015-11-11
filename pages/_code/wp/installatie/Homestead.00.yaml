@@ -1,0 +1,6 @@
+# Crossmedia Publishing (CMP)
+# ---------------------------
+
+    - map: www.cmp.arteveldehogeschool.local
+      to: /home/vagrant/Code/cmp.arteveldehogeschool.local/www/wordpress
+      type: wordpress
