@@ -2,13 +2,13 @@
 layout    : page
 title     : Installatie
 permalink : wp/installatie/
-published : false
+published : true
 tags      :
 ---
 
 > ##### **Voorbeeld** *:package:*{:.pull-left .m-r}
 > ---
-> Het voorbeeldproject vind je op [Bitbucket](https://bitbucket.org/olivierparent/cmp.arteveldehogeschool.local)
+> Het voorbeeldproject vind je op [GitHub](https://github.com/olivierparent/cmp.arteveldehogeschool.local)
 {:.alert .alert-success}
 
 Ontwikkelomgeving
@@ -90,7 +90,6 @@ Het resultaat (Met het opdracht `vagrant@homestead$ tree -d Code`, maar daarvoor
 > ├── www/
 > │   ├── database/
 > │   └── wordpress/
-> │       └── index.php
 > └── README.md
 >```
 {:.card .card-block}
@@ -98,143 +97,145 @@ Het resultaat (Met het opdracht `vagrant@homestead$ tree -d Code`, maar daarvoor
 Database
 --------
 
-WordPress gebruikt een **MySQL** database. 
+> ##### Mappen & Bestanden *:open_file_folder:*{:.pull-left .m-r}
+> ---
+>```
+> cmp.arteveldehogeschool.local/
+> ├── www/
+> │   ├── database/
+> │   │   ├── backup.sh
+> │   │   ├── drop.sh
+> │   │   ├── init.sh
+> │   │   ├── reset.sh
+> │   │   ├── restore.sh
+> │   │   └── settings
+> │   └── wordpress/
+> └── README.md
+>```
+{:.card .card-block}
 
-### Nieuwe Databasegebruiker
+WordPress gebruikt een **MySQL**-database. We gaan met behulp van een aantal Bash-scripts een databasegebruiker en een database aanmaken op de MySQL-server.
 
-#### Aanmelden als Databasebeheerder
+### Instellingenbestand
 
-Meld je aan op de databaseserver als **databasebeheerder** met onderstaande gegevens.
+In de map `database` maken we een nieuwe bestand `settings` waarin de instellingen komen. Op die manier kunnen de scripts voor andere projecten gebruikt worden, en moet enkel dit bestand aangepast worden. 
 
-| Databasebeheerder | Databasewachtwoord |
-|-------------------|--------------------|
-| `homestead`       | `secret`           |
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ touch settings
+{% endhighlight %}
+
+In het bestand zetten we de basisgegevens voor de databasegebruiker en de database.
+
+{% highlight bash %}
+{% include_relative _code/wp/database/settings %}
+{% endhighlight %}
+
+| Databasegebruiker | Databasewachtwoord | Database                     |
+|-------------------|--------------------|------------------------------|
+| `cmp_db_user`     | `cmp_db_password`  | `cmp_arteveldehogeschool_be` |
 {:.table}
 
-Daarvoor gebruiken we deze opdracht:
+### Initialiseren en verwijderen
+
+#### Initialisatiescript
 
 {% highlight bash %}
-vagrant@homestead$ mysql --user=homestead --password
-password: _
-mysql> _
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ touch init.sh && chmod +x init.sh
 {% endhighlight %}
 
-
-> ##### **Tip** *:bulb:*{:.pull-left .m-r}
-> ---
-> Je kan onmiddellijk aanmelden door het wachtwoord op te geven. 
-{:.alert .alert-info}
+Maakt een gebruiker en een database.
 
 {% highlight bash %}
-vagrant@homestead$ MYSQL_PWD=secret mysql --user=homestead
+{% include_relative _code/wp/database/init.sh %}
 {% endhighlight %}
 
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
-> ---
-> Dit is een **veiligheidsrisico** want het wachtwoord is zichtbaar in de CLI-history!
-{:.alert .alert-warning}
-
-#### Nieuwe databasegebruiker aanmaken
-
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
-> ---
-> De **databasegebruiker** is de gebruiker waarmee WordPress een verbinding maakt met de database. Dit is geen WordPress-gebruiker!
-{:.alert .alert-warning}
-
-We maken een databasegebruiker aan met onderstaande gegevens.
-
-| Databasegebruiker | Databasewachtwoord |
-|-------------------|--------------------|
-| `cmp_db_user`     | `cmp_db_password`  |
-{:.table}
-
-Daarvoor gebruiken we deze opdracht:
+Uitvoeren:
 
 {% highlight bash %}
-mysql> GRANT ALL PRIVILEGES ON `cmp_arteveldehogeschool_be`.*
-    -> TO 'cmp_db_user' IDENTIFIED BY 'cmp_db_password';
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ ./init.sh
 {% endhighlight %}
 
-> ##### **Tip** *:bulb:*{:.pull-left .m-r}
-> ---
-> Je kan ook een hostnaam of IP-adres toevoegen. 
-{:.alert .alert-info}
-
-Bijvoorbeeld:
-
- - `'cmp_db_user'@'%'`
- - `'cmp_db_user'@'127.0.0.1'`
- - `'cmp_db_user'@'localhost'`
-
-De standaardwaarde is `%` en dat wil zeggen om het even welke host of om het even welk IP-adres. Omdat `@'%'` de standaard is, mag het weglaten worden.
-
-#### Afmelden
-
-Meld je af als databasebeheerder met:
+#### Verwijderscript
 
 {% highlight bash %}
-mysql> exit
-Bye
-vagrant@homestead$ _
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ touch drop.sh && chmod +x drop.sh
 {% endhighlight %}
 
-### Database Aanmaken
-
-#### Aanmelden als Databasegebruiker
-
-We melden ons aan als de databasegebruiker die we daarnet aangemaakt hebben.
+Verwijdert de database.
 
 {% highlight bash %}
-vagrant@homestead$ mysql --user=cmp_db_user --password
-password: _
-mysql> _
+{% include_relative _code/wp/database/drop.sh %}
 {% endhighlight %}
 
-#### Database Aanmaken
-
-We gaan een database aanmaken met de naam `cmp_arteveldehogeschool_be`.
+Uitvoeren:
 
 {% highlight bash %}
-mysql> CREATE DATABASE IF NOT EXISTS `cmp_arteveldehogeschool_be`
-    -> CHARACTER SET utf8
-    -> COLLATE utf8_general_ci;
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ ./drop.sh
 {% endhighlight %}
 
-Bekijk alle databases met:
+#### Resetscript
 
 {% highlight bash %}
-mysql> SHOW DATABASES;
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ touch reset.sh && chmod +x reset.sh
 {% endhighlight %}
 
-#### Afmelden
-
-Meld je af als databasegebruiker met:
+Voert eerst het verwijderscript uit en daarna het initialisatiescript.
 
 {% highlight bash %}
-mysql> exit
-Bye
-vagrant@homestead$ _
+{% include_relative _code/wp/database/reset.sh %}
 {% endhighlight %}
 
-### Database Backuppen en Terugzetten
-
-#### Database Backup
-
-Meld je aan op de server en voer onderstaande opdracht uit:
+Uitvoeren:
 
 {% highlight bash %}
-vagrant@homestead$ MYSQL_PWD=cmp_db_password mysqldump --user=cmp_db_user --databases cmp_arteveldehogeschool_be > ~/Code/cmp.arteveldehogeschool.local/www/database/dump.sql
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ ./reset.sh
 {% endhighlight %}
 
-> **Tip**  
-> Je kan databasedumps ook een timestamp geven, als je een historiek wil bijhouden:
->
->     vagrant@homestead$ MYSQL_PWD=cmp_db_password mysqldump --user=cmp_db_user --databases cmp_arteveldehogeschool_be > ~/Code/cmp.arteveldehogeschool.local/www/database/dump_$(date +"%Y-%m-%d_%H%M%S").sql
-    
-#### Database Terugzetten
+### Backuppen en terugzetten
+
+#### Backupscript
 
 {% highlight bash %}
-vagrant@homestead$ MYSQL_PWD=cmp_db_password mysql --user=cmp_db_user cmp_arteveldehogeschool_be < ~/Code/cmp.arteveldehogeschool.local/www/database/dump.sql
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ touch backup.sh && chmod +x backup.sh
+{% endhighlight %}
+
+{% highlight bash %}
+{% include_relative _code/wp/database/backup.sh %}
+{% endhighlight %}
+
+Uitvoeren:
+
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ ./backup.sh
+{% endhighlight %}
+
+#### Restorescript
+
+De laatste backup terugzetten.
+
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ touch restore.sh && chmod +x restore.sh
+{% endhighlight %}
+
+{% highlight bash %}
+{% include_relative _code/wp/database/restore.sh %}
+{% endhighlight %}
+
+Uitvoeren:
+
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ ./restore.sh
 {% endhighlight %}
 
 Broncode
@@ -242,7 +243,7 @@ Broncode
 
 We gaan versie `4.3` installeren in de map `~/Code/cmp.arteveldehogeschool.local/www/wordpress/`
 
-Deze map is in [Artevelde Laravel Homestead](https://github.com/OlivierParent/artestead) al automatisch gekoppeld aan de domeinnaam http://www.cmp.arteveldehogeschool.local
+Deze map is in [Artestead][artestead] al automatisch gekoppeld aan de domeinnaam [www.cmp.arteveldehogeschool.local](http://www.cmp.arteveldehogeschool.local)
 
 > ##### Mappen & Bestanden *:open_file_folder:*{:.pull-left .m-r}
 > ---
@@ -259,11 +260,11 @@ Deze map is in [Artevelde Laravel Homestead](https://github.com/OlivierParent/ar
 >```
 {:.card .card-block}
 
-### Eerste Manier: Downloaden
+### Manier 1 (via Website)
 
-Je kan de broncode (van de Nederlandstalige versie) downloaden van [http://nl.wordpress.org/] en het bestand decomprimeren in de map `wordpress`.
+Je kan de broncode (van de Nederlandstalige versie) downloaden van [nl.wordpress.org][wp-org-nl] en het bestand decomprimeren in de map `wordpress`.
 
-### Tweede Manier: WP-CLI
+### Manier 2 (via WP-CLI)
 
 Je kan WordPress ook installeren met **WP-CLI**.
 
@@ -287,105 +288,105 @@ Tenslotte testen we de installatie door het versienummer op te vragen.
 vagrant@homestead$ wp --version
 {% endhighlight %}
 
-#### Installatie van WordPress
+#### Downloaden van WordPress
 
 {% highlight bash %}
 vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/
 vagrant@homestead$ wp core download --path=wordpress --locale=nl_NL
 {% endhighlight %}
 
-### Configuratie
+Configuratie
+------------
 
-Nadat de broncode geïnstalleerd is, moet die ook geconfigureerd worden.
+Nadat de broncode gedownload is, moet WordPress geconfigureerd worden.
+
+|                        Veld | Waarde                       |
+|----------------------------:|------------------------------|
+|            **Databasenaam** | `cmp_arteveldehogeschool_be` |
+| **Database-gebruikersnaam** | `cmp_db_user`                |
+|     **Database-wachtwoord** | `cmp_db_password`            |
+|           **Database-host** | `localhost`                  |
+|             **Tabelprefix** | `wp_`                        |
+{:.table .table-striped}
+
+
+### Manier 1 (via browser)
 
 De configuratie kan je ook via WP-CLI doen, 
 
-Of je kan gewoon naar de website surfen op
-[www.cmp.arteveldehogeschool.local](http://www.cmp.arteveldehogeschool.local) en de configuratieprocedure doorlopen
+Of je kan gewoon surfen naar [www.cmp.arteveldehogeschool.local](http://www.cmp.arteveldehogeschool.local) en de configuratieprocedure doorlopen
 
-#### Via WP-CLI 
+![Configuratie in de browser]({{ site.baseurl }}/images/configuratie.00.png "Configuratie in de browser")
+
+![Configuratie in de browser]({{ site.baseurl }}/images/configuratie.01.png "Configuratie in de browser")
+
+### Manier 2 (via WP-CLI) 
 
 {% highlight bash %}
 vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/wordpress/
 vagrant@homestead$ wp core config --dbname=cmp_arteveldehogeschool_be --dbuser=cmp_db_user --dbpass=cmp_db_password --dbhost=localhost --dbprefix=wp_
-
-wp core install --url=<url> --title=<site-title> --admin_user=<username> --admin_password=<password> --admin_email=<email>
-vagrant@homestead$ wp core install --path=wordpress --locale=nl_NL
 {% endhighlight %}
 
+Installatie
+------------
 
-#### Via de configuratieprocedure
+Nadat de configuratie voltooid is, kan de installatie beginnen.
 
-![Installatie in Browser 00](http://olivierparent.byethost18.com/_assets/CMP/Installatie_Browser_00.png "Installatie in Browser 00")
+|               Veld | Waarde                  |
+|-------------------:|-------------------------|
+|   **Websitetitel** | `Crossmedia Publishing` |
+| **Gebruikersnaam** | `cmp_gebruiker`         |
+|     **Wachtwoord** | `cmp_wachtwoord`        |
+|    **E-mailadres** | `cmp@arteveldehs.be`    |
+{:.table .table-striped}
 
-Kies **Nederlands** en klik daarna op [Continue](http://www.cmp.arteveldehogeschool.local/wp-admin/setup-config.php?step=0) en daarna op [Laten we starten!](http://www.cmp.arteveldehogeschool.local/wp-admin/setup-config.php?step=1&language=nl_NL)
 
-![Installatie in Browser 01](http://olivierparent.byethost18.com/_assets/CMP/Installatie_Browser_01.png "Installatie in Browser 01")
+### Manier 1 (via browser)
 
-| Veld                | Waarde                       |
-|---------------------|------------------------------|
-| **Databasenaam:**   | `cmp_arteveldehogeschool_be` |
-| **Gebruikersnaam:** | `cmp_db_user`                |
-| **Wachtwoord:**     | `cmp_db_password`            |
-| **Database-host:**  | `localhost`                  |
-| **Tabelprefix:**    | `wp_`                        |
-{:.table}
+![Installatieproces in de browser 00]({{ site.baseurl }}/images/installatieproces.00.png "Installatieproces in de browser")
 
-En klik op **Verzenden**.
+![Installatieproces in de browser 01]({{ site.baseurl }}/images/installatieproces.01.png "Installatieproces in de browser")
 
-![Installatie in Browser 02](http://olivierparent.byethost18.com/_assets/CMP/Installatie_Browser_02.png "Installatie in Browser 02")
+![Installatieproces in de browser 02]({{ site.baseurl }}/images/installatieproces.02.png "Installatieproces in de browser")
 
-Daarna klikken we op [De installatie starten](http://www.cmp.arteveldehogeschool.local/wp-admin/install.php?language=nl_NL)
 
-![Installatie in Browser 03](http://olivierparent.byethost18.com/_assets/CMP/Installatie_Browser_03.png "Installatie in Browser 03")
+### Manier 2 (via WP-CLI) 
 
-| Veld                      | Waarde                  |
-|---------------------------|-------------------------|
-| **Websitetitel:**         | `Crossmedia Publishing` |
-| **Gebruikersnaam:**       | `cmp_gebruiker`         |
-| **Wachtwoord:**           | `cmp_wachtwoord`        |
-| **Wachtwoord, tweemaal:** | `cmp_wachtwoord`        |
-| **Je e-mailadres:**       | `cmp@arteveldehs.be`    |
-{:.table}
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/wordpress/
+vagrant@homestead$ wp core install --url=www.cmp.arteveldehogeschool.local --title='Crossmedia Publishing' --admin_user=cmp_user --admin_password=cmp_wachtwoord --admin_email=cmp@arteveldehs.be
+{% endhighlight %}
 
-En klik op **WordPress installeren**.
-
-![Installatie in Browser 04](http://olivierparent.byethost18.com/_assets/CMP/Installatie_Browser_04.png "Installatie in Browser 04")
-
-Daarna klikken op [Inloggen](http://www.cmp.arteveldehogeschool.local/wp-login.php).
-
-![Installatie in Browser 05](http://olivierparent.byethost18.com/_assets/CMP/Installatie_Browser_05.png "Installatie in Browser 05")
+Inloggen
+--------
 
 En inloggen met de WP-gebruikersgegevens.
 
-| Veld                     | Waarde                  |
-|--------------------------|-------------------------|
-| **Gebruikersnaam**       | `cmp_gebruiker`         |
-| **Wachtwoord**           | `cmp_wachtwoord`        |
-{:.table}
+|               Veld | Waarde           |
+|-------------------:|------------------|
+| **Gebruikersnaam** | `cmp_gebruiker`  |
+|     **Wachtwoord** | `cmp_wachtwoord` |
+{:.table .table-striped}
 
-![Installatie in Browser 06](http://olivierparent.byethost18.com/_assets/CMP/Installatie_Browser_06.png "Installatie in Browser 06")
+Ga naar [www.cmp.arteveldehogeschool.local/wp-admin/](http://www.cmp.arteveldehogeschool.local/wp-admin/).
 
-Dan kom je op **Sitebeheer**, het beheerdersgedeelte van de WP-installatie. Je komt standaard binnen op het **Dashboard**.
+![Inlogformulier]({{ site.baseurl }}/images/inloggen.00.png "Inlogformulier")
 
-![Installatie in Browser 07](http://olivierparent.byethost18.com/_assets/CMP/Installatie_Browser_07.png "Installatie in Browser 07")
+![WordPress Dashboard]({{ site.baseurl }}/images/inloggen.01.png "WordPress Dashboard")
 
-Klik op **Crossmedia Publishing** om naar de startpagina van de site te gaan.
-
-![Installatie in Browser 08](http://olivierparent.byethost18.com/_assets/CMP/Installatie_Browser_08.png "Installatie in Browser 08")
-
-### WordPress Netwerk van sites
+WordPress Netwerk van sites
+---------------------------
 
 > ##### Zie ook *:books:*{:.pull-left .m-r}
 > ---
 > - [WordPress.org / Support / Codex / Create A Network](http://codex.wordpress.org/Create_A_Network)
 {:.card .card-block}
 
-#### Wat is een Netwerk?
+### Wat is een Netwerk?
 
 Je kan meerdere websites maken met één installatie van WordPress, een zogenaamd **Netwerk** van sites. De huidige website wordt dan de hoofdwebsite en de bijkomende websites staan dan in een **subdomein** of een **submap**. 
 
-#### Netwerk activeren
+### Netwerk activeren
 
 > ##### **Opgelet** *:warning:*{:.pull-left .m-r}
 > ---
@@ -402,7 +403,8 @@ Sla het bestand op en herlaadt Sitebeheer in de browser.
 
 Onder **Extra** → **Netwerk instellen** kan je **submappen** inschakelen. Je krijgt de nodige aanpassingen te zien.
 
-![Netwerk Instellen](http://olivierparent.byethost18.com/_assets/CMP/Netwerk_instellen.png "Netwerk Instellen")
+![Netwerk Instellen]({{ site.baseurl }}/images/netwerk_instellen.png "Netwerk Instellen")
+
 
 {% comment %}
 <!-- ⚓ Afkortingen -->
@@ -418,4 +420,5 @@ Onder **Extra** → **Netwerk instellen** kan je **submappen** inschakelen. Je k
 [semver]:                   http://semver.org
 [wp-com]:                   https://wordpress.com
 [wp-org]:                   https://wordpress.org
+[wp-org-nl]:                https://nl.wordpress.org
 [wp-svn]:                   http://core.svn.wordpress.org
