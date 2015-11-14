@@ -8,7 +8,7 @@ tags      :
 
 > ##### **Voorbeeld** *:package:*{:.pull-left .m-r}
 > ---
-> Het voorbeeldproject vind je op [GitHub](https://github.com/olivierparent/cmp.arteveldehogeschool.local)
+> Het voorbeeldproject vind je op [*&nbsp;*{:.fa .fa-github-square}GitHub](https://github.com/olivierparent/cmp.arteveldehogeschool.local)
 {:.alert .alert-success}
 
 Ontwikkelomgeving
@@ -37,7 +37,7 @@ Verwijder het commentaar (`#`) in de regels onder **Crossmedia Publishing (CMP)*
 
 > ##### **Opgelet** *:warning:*{:.pull-left .m-r}
 > ---
-> In YAML-bestanden heeft de insprong invloed op de betekenis. Verwijder geen spaties!
+> In YAML-bestanden heeft de insprong invloed op de betekenis. Geen spaties toevoegen of verwijderen!
 {:.alert .alert-warning}
 
 ### Opstarten
@@ -142,13 +142,23 @@ In het bestand zetten we de basisgegevens voor de databasegebruiker en de databa
 
 {% highlight bash %}
 vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ touch init.sh && chmod +x init.sh
+vagrant@homestead$ touch init.sh && chmod +x init.sh && dos2unix init.sh
 {% endhighlight %}
 
 Maakt een gebruiker en een database.
 
 {% highlight bash %}
 {% include_relative _code/wp/database/init.sh %}
+{% endhighlight %}
+
+> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ---
+> Als het script op *&nbsp;*{:.fa .fa-windows}Windows bewerkt werd, moet er mogelijk eerst nog een eenmalige `dos2unix` op het bestand uitgevoerd worden, voor het script correct uitgevoerd kan worden.
+{:.alert .alert-warning}
+
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ dos2unix init.sh
 {% endhighlight %}
 
 Uitvoeren:
@@ -162,13 +172,23 @@ vagrant@homestead$ ./init.sh
 
 {% highlight bash %}
 vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ touch drop.sh && chmod +x drop.sh
+vagrant@homestead$ touch drop.sh && chmod +x drop.sh && dos2unix drop.sh
 {% endhighlight %}
 
 Verwijdert de database.
 
 {% highlight bash %}
 {% include_relative _code/wp/database/drop.sh %}
+{% endhighlight %}
+
+> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ---
+> Als het script op *&nbsp;*{:.fa .fa-windows}Windows bewerkt werd, moet er mogelijk eerst nog een eenmalige `dos2unix` op het bestand uitgevoerd worden, voor het script correct uitgevoerd kan worden.
+{:.alert .alert-warning}
+
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ dos2unix drop.sh
 {% endhighlight %}
 
 Uitvoeren:
@@ -191,6 +211,16 @@ Voert eerst het verwijderscript uit en daarna het initialisatiescript.
 {% include_relative _code/wp/database/reset.sh %}
 {% endhighlight %}
 
+> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ---
+> Als het script op *&nbsp;*{:.fa .fa-windows}Windows bewerkt werd, moet er mogelijk eerst nog een eenmalige `dos2unix` op het bestand uitgevoerd worden, voor het script correct uitgevoerd kan worden.
+{:.alert .alert-warning}
+
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ dos2unix reset.sh
+{% endhighlight %}
+
 Uitvoeren:
 
 {% highlight bash %}
@@ -211,6 +241,16 @@ vagrant@homestead$ touch backup.sh && chmod +x backup.sh
 {% include_relative _code/wp/database/backup.sh %}
 {% endhighlight %}
 
+> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ---
+> Als het script op *&nbsp;*{:.fa .fa-windows}Windows bewerkt werd, moet er mogelijk eerst nog een eenmalige `dos2unix` op het bestand uitgevoerd worden, voor het script correct uitgevoerd kan worden.
+{:.alert .alert-warning}
+
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ dos2unix backup.sh
+{% endhighlight %}
+
 Uitvoeren:
 
 {% highlight bash %}
@@ -229,6 +269,16 @@ vagrant@homestead$ touch restore.sh && chmod +x restore.sh
 
 {% highlight bash %}
 {% include_relative _code/wp/database/restore.sh %}
+{% endhighlight %}
+
+> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ---
+> Als het script op *&nbsp;*{:.fa .fa-windows}Windows bewerkt werd, moet er mogelijk eerst nog een eenmalige `dos2unix` op het bestand uitgevoerd worden, voor het script correct uitgevoerd kan worden.
+{:.alert .alert-warning}
+
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ dos2unix restore.sh
 {% endhighlight %}
 
 Uitvoeren:
@@ -410,6 +460,7 @@ Onder **Extra** → **Netwerk instellen** kan je **submappen** inschakelen. Je k
 <!-- ⚓ Afkortingen -->
 {% endcomment %}
 *[WP]:                      WordPress
+*[YAML]:                    YAML Ain't Markup Language
 
 {% comment %}
 <!-- ⚓ Hyperlinks -->

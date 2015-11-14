@@ -52,8 +52,8 @@ FontAwesome
  - *&nbsp;*{:.fa .fa-bitbucket}Bitbucket
  - *&nbsp;*{:.fa .fa-dropbox}Dropbox
  - *&nbsp;*{:.fa .fa-git}Git
- - *&nbsp;*{:.fa .fa-github-square}Github
- - *&nbsp;*{:.fa .fa-github}Github
+ - *&nbsp;*{:.fa .fa-github-square}GitHub
+ - *&nbsp;*{:.fa .fa-github}GitHub
  - *&nbsp;*{:.fa .fa-code-fork}Fork
  - *&nbsp;*{:.fa .fa-maxcdn}maxcdn
  - *&nbsp;*{:.fa .fa-trello}Trello

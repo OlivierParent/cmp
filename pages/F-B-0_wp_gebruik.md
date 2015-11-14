@@ -2,7 +2,7 @@
 layout    : page
 title     : Gebruik
 permalink : wp/gebruik/
-published : true
+published : false
 tags      :
 ---
 
