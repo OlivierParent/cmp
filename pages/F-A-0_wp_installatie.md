@@ -5,11 +5,12 @@ permalink : wp/installatie/
 published : true
 tags      :
 ---
-
+{% comment %}
 > ##### **Voorbeeld** *:package:*{:.pull-left .m-r}
 > ---
 > Het voorbeeldproject vind je op [*&nbsp;*{:.fa .fa-github-square}GitHub](https://github.com/olivierparent/cmp.arteveldehogeschool.local)
 {:.alert .alert-success}
+{% endcomment %}
 
 Ontwikkelomgeving
 -----------------
@@ -142,7 +143,7 @@ In het bestand zetten we de basisgegevens voor de databasegebruiker en de databa
 
 {% highlight bash %}
 vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ touch init.sh && chmod +x init.sh && dos2unix init.sh
+vagrant@homestead$ touch init.sh && chmod +x init.sh
 {% endhighlight %}
 
 Maakt een gebruiker en een database.
@@ -172,7 +173,7 @@ vagrant@homestead$ ./init.sh
 
 {% highlight bash %}
 vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ touch drop.sh && chmod +x drop.sh && dos2unix drop.sh
+vagrant@homestead$ touch drop.sh && chmod +x drop.sh
 {% endhighlight %}
 
 Verwijdert de database.
