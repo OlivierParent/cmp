@@ -405,7 +405,7 @@ Nadat de configuratie voltooid is, kan de installatie beginnen.
 
 {% highlight bash %}
 vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/wordpress/
-vagrant@homestead$ wp core install --url=www.cmp.arteveldehogeschool.local --title='Crossmedia Publishing' --admin_user=cmp_user --admin_password=cmp_wachtwoord --admin_email=cmp@arteveldehs.be
+vagrant@homestead$ wp core install --url=www.cmp.arteveldehogeschool.local --title='Crossmedia Publishing' --admin_user=cmp_gebruiker --admin_password=cmp_wachtwoord --admin_email=cmp@arteveldehs.be
 {% endhighlight %}
 
 Inloggen
