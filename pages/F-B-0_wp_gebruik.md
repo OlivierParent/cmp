@@ -2,13 +2,14 @@
 layout    : page
 title     : Gebruik
 permalink : wp/gebruik/
-published : false
+published : true
 tags      :
 ---
 
 > ##### Zie ook *:books:*{:.pull-left .m-r}
 > ---
 > - [WordPress.org / Codex / First Steps With WordPress](http://codex.wordpress.org/First_Steps_With_WordPress)
+> - [WordPress.org / Codex / Eerste stappen met WordPress](http://codex.wordpress.org/nl:Eerste_stappen_met_WordPress)
 > - [WordPress.org / Codex / WordPress Lessons](http://codex.wordpress.org/WordPress_Lessons)
 {:.card .card-block}
 

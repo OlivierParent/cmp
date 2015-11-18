@@ -3,7 +3,7 @@ layout    : page
 title     : Thema
 title_long: Themaontwikkeling
 permalink : wp/ontwikkeling/thema/
-published : false
+published : true
 tags      :
 ---
 
@@ -27,33 +27,33 @@ We gaan het Thema **DevDMBootstrap3** toevoegen.
 
 **Weergave** → **Thema's** en klik op **Nieuwe toevoegen**.
 
-![Thema Toevoegen 00](http://olivierparent.byethost18.com/_assets/CMP/Thema_Toevoegen_00.png "Thema Toevoegen 00")
+![Thema Toevoegen 00]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.00.png "Thema Toevoegen 00")
 
 Typ "DevDMBootstrap3" in. 
 
-![Thema Toevoegen 01](http://olivierparent.byethost18.com/_assets/CMP/Thema_Toevoegen_00.png "Thema Toevoegen 01")
+![Thema Toevoegen 01]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.01.png "Thema Toevoegen 01")
 
 Hover over het Thema en klik op **Installeren**. 
 
-![Thema Toevoegen 02](http://olivierparent.byethost18.com/_assets/CMP/Thema_Toevoegen_00.png "Thema Toevoegen 02")
+![Thema Toevoegen 02]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.02.png "Thema Toevoegen 02")
 
 Eens het Thema geïnstalleerd is, kan je terugkeren naar **Thema's**.
 
-![Thema Toevoegen 03](http://olivierparent.byethost18.com/_assets/CMP/Thema_Toevoegen_00.png "Thema Toevoegen 03")
+![Thema Toevoegen 03]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.03.png "Thema Toevoegen 03")
 
 Het nieuwe Thema staat nu in de lijst. Het moet niet geactiveerd worden, want we gaan het niet rechtstreeks gebruiken, maar wel via een **Childthema**.
 
-![Thema Toevoegen 04](http://olivierparent.byethost18.com/_assets/CMP/Thema_Toevoegen_00.png "Thema Toevoegen 04")
+![Thema Toevoegen 04]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.04.png "Thema Toevoegen 04")
 
 Je kan wel een **Preview** bekijken.
 
-![Thema Toevoegen 05](http://olivierparent.byethost18.com/_assets/CMP/Thema_Toevoegen_00.png "Thema Toevoegen 05")
+![Thema Toevoegen 05]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.05.png "Thema Toevoegen 05")
 
 Thema Ontwikkelen
 -----------------
 
-> **Zie ook**
->
+> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ---
 > - [WordPress.org / Codex / Theme Development](http://codex.wordpress.org/Theme_Development)
 > - [WordPress.org / Codex / Child Themes](http://codex.wordpress.org/Child_Themes)
 > - [WordPress.org / Themes / DevDmBootstrap3](https://wordpress.org/themes/devdmbootstrap3)
@@ -64,37 +64,40 @@ Thema Ontwikkelen
 > **Nieuwe documentatie**
 > 
 > - [WordPress.org / Developer Resources](https://developer.wordpress.org/)
+{:.card .card-block}
 
 ### Inleiding
 
 Alle geïnstalleerde Thema's staan in de map `themes` 
 
-> **Mappenstructuur**
->
->     ~/Code/cmp.arteveldehogeschool.local/
->     └── www/
->         ├── database/
->         └── wordpress/
->             └── wp-content/
->                 └── themes/
->                     ├── devdmbootstrap3/
->                     ├── twentyeleven/
->                     ├── twentyfifteen/
->                     ├── twentyfourteen/
->                     ├── twentyten/
->                     ├── twentythirteen/
->                     └── twentytwelve/
+> ##### Mappen & Bestanden *:open_file_folder:*{:.pull-left .m-r}
+> ---
+>```
+> cmp.arteveldehogeschool.local/
+> ├── www/
+> │   ├── scripts/
+> │   └── wordpress/
+> │       └── wp-content/
+> │           └── themes/
+> │               ├── devdmbootstrap3/
+> │               ├── twentyfifteen/
+> │               ├── twentyfourteen/
+> │               └── twentythirteen/
+> └── README.md
+>```
+{:.card .card-block}
 
 ### Childthema
 
-> **Zie ook**
-> 
+> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ---
 > - [WordPress.org / Codex / Child Themes](http://codex.wordpress.org/Child_Themes)
 > - [WordPress.org / Themes / DevDmBootstrap3](https://wordpress.org/themes/devdmbootstrap3)
 > - [Danny Machal / DevDmBootstrap3](http://devdm.com/DevDmBootstrap3/)
 > - [Danny Machal / DevDmBootstrap3 / Child Themes](http://devdm.com/DevDmBootstrap/child-themes/)
 > - [Bootstrap](http://getbootstrap.com)
 > - [SitePoint / Understanding Bootstrap's Grid System](http://www.sitepoint.com/understanding-bootstrap-grid-system/)
+{:.card .card-block}
 
 #### Waarom een Childthema?
 
@@ -116,19 +119,27 @@ Een Thema moet verplicht een aantal bestanden bevatten:
 |------------------|-------------------------------------------------------------|
 | `screenshot.png` | Een **schermafbeelding** van het Thema.                     |
 | `style.css`      | Bevat de **metagegevens** van het Thema en **stijlen**.     |
+{:.table}
 
-> **Mappen en bestanden**
->
->     ~/Code/cmp.arteveldehogeschool.local/
->     └── www/
->         ├── database/
->         └── wordpress/
->             └── wp-content/
->                 └── themes/
->                     ├── arteveldehogeschool/
->                      |  ├── screenshot.png
->                      |  └── style.css
->                     └── devdmbootstrap3/
+> ##### Mappen & Bestanden *:open_file_folder:*{:.pull-left .m-r}
+> ---
+>```
+> cmp.arteveldehogeschool.local/
+> ├── www/
+> │   ├── scripts/
+> │   └── wordpress/
+> │       └── wp-content/
+> │           └── themes/
+> │               ├── arteveldehogeschool/
+> │               │   ├── screenshot.png
+> │               │   └── style.css
+> │               ├── devdmbootstrap3/
+> │               ├── twentyfifteen/
+> │               ├── twentyfourteen/
+> │               └── twentythirteen/
+> └── README.md
+>```
+{:.card .card-block}
 
 ##### `arteveldehogeschool/`
 
@@ -142,7 +153,8 @@ en zetten er een **afbeelding** in met de naam `screenshot.png`. Deze afbeelding
 
 In de map zetten we ook een **stylesheet** met de naam `style.css`:
 
-```css
+
+{% highlight css %}
 /*
 Theme Name:   Arteveldehogeschool
 Theme URI:    http://www.arteveldehogeschool.be/
@@ -156,7 +168,7 @@ Text Domain:  devdmbootstrap3-child
 */
 
 /* Vanaf hier mag je stijlen toevoegen */
-```
+{% endhighlight %}
 
 In de commentaar staan de **metagegevens** van het Thema.
 

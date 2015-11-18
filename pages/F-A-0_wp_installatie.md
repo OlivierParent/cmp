@@ -5,12 +5,11 @@ permalink : wp/installatie/
 published : true
 tags      :
 ---
-{% comment %}
+
 > ##### **Voorbeeld** *:package:*{:.pull-left .m-r}
 > ---
 > Het voorbeeldproject vind je op [*&nbsp;*{:.fa .fa-github-square}GitHub](https://github.com/olivierparent/cmp.arteveldehogeschool.local)
 {:.alert .alert-success}
-{% endcomment %}
 
 Ontwikkelomgeving
 -----------------
@@ -65,10 +64,10 @@ Na het aanmelden op de Vagrant Box gaan we eerst naar de map `Code` die in de th
 vagrant@homestead$ cd ~/Code/
 {% endhighlight %}
 
-Daarna maken we de map `database` aan met de opdracht `mkdir` *(Make Directory)* en de optie `-p` *(parents),* zodat ook de bovenliggende mappen *(Parent Directories)* `www` en `cmp.arteveldehogeschool.be` zo nodig aangemaakt worden:
+Daarna maken we de map `scripts` aan met de opdracht `mkdir` *(Make Directory)* en de optie `-p` *(parents),* zodat ook de bovenliggende mappen *(Parent Directories)* `www` en `cmp.arteveldehogeschool.be` zo nodig aangemaakt worden:
 
 {% highlight bash %}
-vagrant@homestead$ mkdir -p cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ mkdir -p cmp.arteveldehogeschool.local/www/scripts/
 {% endhighlight %}
 
 Vervolgens gaan we naar de `www` map:
@@ -89,7 +88,7 @@ Het resultaat (Met het opdracht `vagrant@homestead$ tree -d Code`, maar daarvoor
 >```
 > cmp.arteveldehogeschool.local/
 > ├── www/
-> │   ├── database/
+> │   ├── scripts/
 > │   └── wordpress/
 > └── README.md
 >```
@@ -103,12 +102,12 @@ Database
 >```
 > cmp.arteveldehogeschool.local/
 > ├── www/
-> │   ├── database/
-> │   │   ├── backup.sh
-> │   │   ├── drop.sh
-> │   │   ├── init.sh
-> │   │   ├── reset.sh
-> │   │   ├── restore.sh
+> │   ├── scripts/
+> │   │   ├── db_backup.sh
+> │   │   ├── db_drop.sh
+> │   │   ├── db_init.sh
+> │   │   ├── db_reset.sh
+> │   │   ├── db_restore.sh
 > │   │   └── settings
 > │   └── wordpress/
 > └── README.md
@@ -119,17 +118,17 @@ WordPress gebruikt een **MySQL**-database. We gaan met behulp van een aantal Bas
 
 ### Instellingenbestand
 
-In de map `database` maken we een nieuwe bestand `settings` waarin de instellingen komen. Op die manier kunnen de scripts voor andere projecten gebruikt worden, en moet enkel dit bestand aangepast worden. 
+In de map `scripts` maken we een nieuwe bestand `settings` waarin de instellingen komen. Op die manier kunnen de scripts voor andere projecten gebruikt worden, en moet enkel dit bestand aangepast worden. 
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
 vagrant@homestead$ touch settings
 {% endhighlight %}
 
 In het bestand zetten we de basisgegevens voor de databasegebruiker en de database.
 
 {% highlight bash %}
-{% include_relative _code/wp/database/settings %}
+{% include_relative _code/wp/scripts/settings %}
 {% endhighlight %}
 
 | Databasegebruiker | Databasewachtwoord | Database                     |
@@ -142,14 +141,14 @@ In het bestand zetten we de basisgegevens voor de databasegebruiker en de databa
 #### Initialisatiescript
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ touch init.sh && chmod +x init.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ touch db_init.sh && chmod +x db_init.sh
 {% endhighlight %}
 
 Maakt een gebruiker en een database.
 
 {% highlight bash %}
-{% include_relative _code/wp/database/init.sh %}
+{% include_relative _code/wp/scripts/db_init.sh %}
 {% endhighlight %}
 
 > ##### **Opgelet** *:warning:*{:.pull-left .m-r}
@@ -158,28 +157,28 @@ Maakt een gebruiker en een database.
 {:.alert .alert-warning}
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ dos2unix init.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ dos2unix db_init.sh
 {% endhighlight %}
 
 Uitvoeren:
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ ./init.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ ./db_init.sh
 {% endhighlight %}
 
 #### Verwijderscript
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ touch drop.sh && chmod +x drop.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ touch db_drop.sh && chmod +x db_drop.sh
 {% endhighlight %}
 
 Verwijdert de database.
 
 {% highlight bash %}
-{% include_relative _code/wp/database/drop.sh %}
+{% include_relative _code/wp/scripts/db_drop.sh %}
 {% endhighlight %}
 
 > ##### **Opgelet** *:warning:*{:.pull-left .m-r}
@@ -188,28 +187,28 @@ Verwijdert de database.
 {:.alert .alert-warning}
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ dos2unix drop.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ dos2unix db_drop.sh
 {% endhighlight %}
 
 Uitvoeren:
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ ./drop.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ ./db_drop.sh
 {% endhighlight %}
 
 #### Resetscript
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ touch reset.sh && chmod +x reset.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ touch db_reset.sh && chmod +x db_reset.sh
 {% endhighlight %}
 
 Voert eerst het verwijderscript uit en daarna het initialisatiescript.
 
 {% highlight bash %}
-{% include_relative _code/wp/database/reset.sh %}
+{% include_relative _code/wp/scripts/db_reset.sh %}
 {% endhighlight %}
 
 > ##### **Opgelet** *:warning:*{:.pull-left .m-r}
@@ -218,15 +217,15 @@ Voert eerst het verwijderscript uit en daarna het initialisatiescript.
 {:.alert .alert-warning}
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ dos2unix reset.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ dos2unix db_reset.sh
 {% endhighlight %}
 
 Uitvoeren:
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ ./reset.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ ./db_reset.sh
 {% endhighlight %}
 
 ### Backuppen en terugzetten
@@ -234,12 +233,12 @@ vagrant@homestead$ ./reset.sh
 #### Backupscript
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ touch backup.sh && chmod +x backup.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ touch db_backup.sh && chmod +x db_backup.sh
 {% endhighlight %}
 
 {% highlight bash %}
-{% include_relative _code/wp/database/backup.sh %}
+{% include_relative _code/wp/scripts/db_backup.sh %}
 {% endhighlight %}
 
 > ##### **Opgelet** *:warning:*{:.pull-left .m-r}
@@ -248,15 +247,15 @@ vagrant@homestead$ touch backup.sh && chmod +x backup.sh
 {:.alert .alert-warning}
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ dos2unix backup.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ dos2unix db_backup.sh
 {% endhighlight %}
 
 Uitvoeren:
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ ./backup.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ ./db_backup.sh
 {% endhighlight %}
 
 #### Restorescript
@@ -264,12 +263,12 @@ vagrant@homestead$ ./backup.sh
 De laatste backup terugzetten.
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ touch restore.sh && chmod +x restore.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ touch db_restore.sh && chmod +x db_restore.sh
 {% endhighlight %}
 
 {% highlight bash %}
-{% include_relative _code/wp/database/restore.sh %}
+{% include_relative _code/wp/scripts/db_restore.sh %}
 {% endhighlight %}
 
 > ##### **Opgelet** *:warning:*{:.pull-left .m-r}
@@ -278,15 +277,15 @@ vagrant@homestead$ touch restore.sh && chmod +x restore.sh
 {:.alert .alert-warning}
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ dos2unix restore.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ dos2unix db_restore.sh
 {% endhighlight %}
 
 Uitvoeren:
 
 {% highlight bash %}
-vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/database/
-vagrant@homestead$ ./restore.sh
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/scripts/
+vagrant@homestead$ ./db_restore.sh
 {% endhighlight %}
 
 Broncode
@@ -301,7 +300,7 @@ Deze map is in [Artestead][artestead] al automatisch gekoppeld aan de domeinnaam
 >```
 > cmp.arteveldehogeschool.local/
 > ├── www/
-> │   ├── database/
+> │   ├── scripts/
 > │   └── wordpress/
 > │       ├── wp-admin/
 > │       ├── wp-content/
@@ -367,9 +366,9 @@ De configuratie kan je ook via WP-CLI doen,
 
 Of je kan gewoon surfen naar [www.cmp.arteveldehogeschool.local](http://www.cmp.arteveldehogeschool.local) en de configuratieprocedure doorlopen
 
-![Configuratie in de browser]({{ site.baseurl }}/images/configuratie.00.png "Configuratie in de browser")
+![Configuratie in de browser]({{ site.baseurl }}/images/installatie/configuratie.00.png "Configuratie in de browser")
 
-![Configuratie in de browser]({{ site.baseurl }}/images/configuratie.01.png "Configuratie in de browser")
+![Configuratie in de browser]({{ site.baseurl }}/images/installatie/configuratie.01.png "Configuratie in de browser")
 
 ### Manier 2 (via WP-CLI) 
 
@@ -394,11 +393,11 @@ Nadat de configuratie voltooid is, kan de installatie beginnen.
 
 ### Manier 1 (via browser)
 
-![Installatieproces in de browser 00]({{ site.baseurl }}/images/installatieproces.00.png "Installatieproces in de browser")
+![Installatieproces in de browser 00]({{ site.baseurl }}/images/installatie/installatieproces.00.png "Installatieproces in de browser")
 
-![Installatieproces in de browser 01]({{ site.baseurl }}/images/installatieproces.01.png "Installatieproces in de browser")
+![Installatieproces in de browser 01]({{ site.baseurl }}/images/installatie/installatieproces.01.png "Installatieproces in de browser")
 
-![Installatieproces in de browser 02]({{ site.baseurl }}/images/installatieproces.02.png "Installatieproces in de browser")
+![Installatieproces in de browser 02]({{ site.baseurl }}/images/installatie/installatieproces.02.png "Installatieproces in de browser")
 
 
 ### Manier 2 (via WP-CLI) 
@@ -421,9 +420,9 @@ En inloggen met de WP-gebruikersgegevens.
 
 Ga naar [www.cmp.arteveldehogeschool.local/wp-admin/](http://www.cmp.arteveldehogeschool.local/wp-admin/).
 
-![Inlogformulier]({{ site.baseurl }}/images/inloggen.00.png "Inlogformulier")
+![Inlogformulier]({{ site.baseurl }}/images/installatie/inloggen.00.png "Inlogformulier")
 
-![WordPress Dashboard]({{ site.baseurl }}/images/inloggen.01.png "WordPress Dashboard")
+![WordPress Dashboard]({{ site.baseurl }}/images/installatie/inloggen.01.png "WordPress Dashboard")
 
 WordPress Netwerk van sites
 ---------------------------
@@ -454,7 +453,7 @@ Sla het bestand op en herlaadt Sitebeheer in de browser.
 
 Onder **Extra** → **Netwerk instellen** kan je **submappen** inschakelen. Je krijgt de nodige aanpassingen te zien.
 
-![Netwerk Instellen]({{ site.baseurl }}/images/netwerk_instellen.png "Netwerk Instellen")
+![Netwerk Instellen]({{ site.baseurl }}/images/installatie/netwerk_instellen.png "Netwerk Instellen")
 
 
 {% comment %}

@@ -67,7 +67,7 @@ We maken een nieuwe Plugin met de naam `arteveldehogeschool_lexicon`. Dit doen w
 >
 >     ~/Code/cmp.arteveldehogeschool.local/
 >     └── www/
->         ├── database/
+>         ├── scripts/
 >         └── wordpress/
 >             └── wp-content/
 >                 └── plugins/
