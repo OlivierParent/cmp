@@ -247,7 +247,7 @@ Evaluatie
 > ##### Kerstperiode *:christmas_tree:*{:.pull-left .m-r}
 {:.card .card-block .bg-info}
 
-#### ??? ?? jan 2016
+#### Woe 13 jan 2016
 
 > ##### [Mondeling Examen](/opdracht/#milestone-exam-oral) *:speech_balloon:*{:.pull-left .m-r}
 {:.card .card-block}
