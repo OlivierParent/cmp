@@ -26,6 +26,12 @@ Alert blocks
 > Lorem ipsum dolor sit amet.
 {:.alert .alert-info}
 
+> ##### **Remarks**|**Opmerkingen** *:point_up:*{:.pull-left .m-r}
+> ---
+> - Lorem ipsum dolor sit amet.
+> - Lorem ipsum dolor sit amet.
+{:.alert .alert-info}
+
 > ##### **Warning**|**Caution**|**Opgelet** *:warning:*{:.pull-left .m-r}
 > ---
 > Lorem ipsum dolor sit amet.

@@ -1,6 +1,6 @@
 ---
 layout   : page
-title    : Code
+title    : "Code"
 permalink: styleguide/code/
 published: true
 tags     : styleguide
@@ -11,7 +11,7 @@ Code
 
 ### CSS
 
-{% highlight css linenos=table linenostart=0 hl_lines=1 %}
+{% highlight css linenos %}
 body {
     font-family: sans-serif;
 }
@@ -69,6 +69,13 @@ html {
         }
     }
 }
+{% endhighlight %}
+
+### SQL
+
+{% highlight sql linenos %}
+-- Toon tabellen
+SHOW TABLES;
 {% endhighlight %}
 
 ### TypeScript
@@ -147,7 +154,13 @@ Browsers
 > **MenuItem1** → **MenuItem2** → **MenuItem3**
 {:.card .card-block}
 
-### Internet Explorer
+### Microsoft
+
+> ##### *&nbsp;*{:.fa .fa-edge}Edge
+>
+> Description
+> **MenuItem1** → **MenuItem2** → **MenuItem3**
+{:.card .card-block}
 
 > ##### *&nbsp;*{:.fa .fa-internet-explorer}Internet Explorer
 >

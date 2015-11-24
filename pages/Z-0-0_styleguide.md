@@ -35,6 +35,7 @@ FontAwesome
 ### Browsers
 
  - *&nbsp;*{:.fa .fa-chrome}Chrome
+ - *&nbsp;*{:.fa .fa-edge}Edge
  - *&nbsp;*{:.fa .fa-firefox}Firefox
  - *&nbsp;*{:.fa .fa-firefox}Firefox Developer Edition
  - *&nbsp;*{:.fa .fa-internet-explorer}Internet Explorer
