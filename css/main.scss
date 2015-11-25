@@ -122,6 +122,35 @@ a {
     }
 }
 
+aside {
+    h4, h5, h6 {
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    h6 {
+        font-weight: normal;
+        padding-left: 1em; 
+    }
+}
+
+blockquote {
+    &.alert,
+    &.card {
+        h5 {
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+    &.card[id] {
+        padding-bottom: 0;
+    }
+}
+
+
+img {
+    max-width: 100%;
+}
+
 // footer
 $footer-height: 4rem;
 
@@ -141,8 +170,4 @@ body {
             width: 100%;
         }
     }
-}
-
-img {
-    max-width: 100%;
 }
