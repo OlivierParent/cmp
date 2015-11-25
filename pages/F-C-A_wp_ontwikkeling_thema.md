@@ -29,7 +29,7 @@ We gaan het Thema **DevDMBootstrap3** toevoegen.
 
 ![Thema Toevoegen 00]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.00.png "Thema Toevoegen 00")
 
-Typ "DevDMBootstrap3" in. 
+Typ "DevDMBootstrap3" in het veld "Thema's doorzoeken…". 
 
 ![Thema Toevoegen 01]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.01.png "Thema Toevoegen 01")
 
@@ -167,7 +167,7 @@ Nadat je `style.css` opgeslagen hebt, zal het in de **Sitebeheer** onder Thema's
 
 Een Childthema kan je activeren zoals een gewoon Thema.
 
-Voor je een thema activeert kan je een **Live voorbeeld** bekijken. Op dit ogenblik is het Child-thema nog identiek aan het Parent-thema.
+Voor je een thema activeert kan je een **Live voorbeeld** bekijken. Op dit ogenblik is het Childthema nog identiek aan het Parentthema.
 
 ![Childthema 01]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.01.png "Childthema 01")
  
@@ -183,9 +183,11 @@ Je kan een aantal instellingen van het Thema aanpassen door op de knop **Customi
 
 De detailpagina toont de **metagegevens** die we in `styles.css` geplaatst hebben. 
 
-Het actieve Thema kan je op de website zien. 
+![Childthema 04]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.04.png "Childthema 04")
 
+Het actieve Thema kan je op de [website](http://www.cmp.arteveldehogeschool.local) zien. 
 
+![Childthema 05]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.05.png "Childthema 05")
 
 
 {% comment %}
