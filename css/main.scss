@@ -123,12 +123,13 @@ a {
 }
 
 aside {
-    h4, h5, h6 {
-        font-weight: bold;
+    .h4, .h5, .h6 {
         margin-bottom: 0;
     }
-    h6 {
-        font-weight: normal;
+    .h4 {
+        font-weight: bold;
+    }
+    .h6 {
         padding-left: 1em; 
     }
 }
@@ -145,7 +146,6 @@ blockquote {
         padding-bottom: 0;
     }
 }
-
 
 img {
     max-width: 100%;

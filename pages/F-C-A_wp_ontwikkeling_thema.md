@@ -155,19 +155,7 @@ In de map zetten we ook een **stylesheet** met de naam `style.css`:
 
 
 {% highlight css %}
-/*
-Theme Name:   Arteveldehogeschool
-Theme URI:    http://www.arteveldehogeschool.be/
-Description:  DevDmBootstrap3 Child Theme
-Author:       Olivier Parent
-Author URI:   http://www.olivierparent.be/
-Template:     devdmbootstrap3
-Version:      1.0.0
-Tags:         arteveldehogeschool, wordpress
-Text Domain:  devdmbootstrap3-child
-*/
-
-/* Vanaf hier mag je stijlen toevoegen */
+{% include_relative _code/wp/ontwikkeling/thema/style.00.css %}
 {% endhighlight %}
 
 In de commentaar staan de **metagegevens** van het Thema.
