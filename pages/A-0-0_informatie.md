@@ -2,7 +2,7 @@
 layout    : page
 title     : Info
 title_long: Algemene informatie
-permalink : opdracht/informatie/
+permalink : informatie/
 published : true
 tags      :
 ---

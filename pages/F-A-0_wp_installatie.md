@@ -366,9 +366,9 @@ De configuratie kan je ook via WP-CLI doen,
 
 Of je kan gewoon surfen naar [www.cmp.arteveldehogeschool.local](http://www.cmp.arteveldehogeschool.local) en de configuratieprocedure doorlopen
 
-![Configuratie in de browser]({{ site.baseurl }}/images/installatie/configuratie.00.png "Configuratie in de browser")
+![Configuratie in de browser]({{ site.baseurl }}/images/installatie/configuratie.00.png "Configuratie in de browser"){:.screenshot}
 
-![Configuratie in de browser]({{ site.baseurl }}/images/installatie/configuratie.01.png "Configuratie in de browser")
+![Configuratie in de browser]({{ site.baseurl }}/images/installatie/configuratie.01.png "Configuratie in de browser"){:.screenshot}
 
 ### Manier 2 (via WP-CLI) 
 
@@ -393,11 +393,11 @@ Nadat de configuratie voltooid is, kan de installatie beginnen.
 
 ### Manier 1 (via browser)
 
-![Installatieproces in de browser 00]({{ site.baseurl }}/images/installatie/installatieproces.00.png "Installatieproces in de browser")
+![Installatieproces in de browser 00]({{ site.baseurl }}/images/installatie/installatieproces.00.png "Installatieproces in de browser"){:.screenshot}
 
-![Installatieproces in de browser 01]({{ site.baseurl }}/images/installatie/installatieproces.01.png "Installatieproces in de browser")
+![Installatieproces in de browser 01]({{ site.baseurl }}/images/installatie/installatieproces.01.png "Installatieproces in de browser"){:.screenshot}
 
-![Installatieproces in de browser 02]({{ site.baseurl }}/images/installatie/installatieproces.02.png "Installatieproces in de browser")
+![Installatieproces in de browser 02]({{ site.baseurl }}/images/installatie/installatieproces.02.png "Installatieproces in de browser"){:.screenshot}
 
 
 ### Manier 2 (via WP-CLI) 
@@ -420,9 +420,9 @@ En inloggen met de WP-gebruikersgegevens.
 
 Ga naar [www.cmp.arteveldehogeschool.local/wp-admin/](http://www.cmp.arteveldehogeschool.local/wp-admin/).
 
-![Inlogformulier]({{ site.baseurl }}/images/installatie/inloggen.00.png "Inlogformulier")
+![Inlogformulier]({{ site.baseurl }}/images/installatie/inloggen.00.png "Inlogformulier"){:.screenshot}
 
-![WordPress Dashboard]({{ site.baseurl }}/images/installatie/inloggen.01.png "WordPress Dashboard")
+![WordPress Dashboard]({{ site.baseurl }}/images/installatie/inloggen.01.png "WordPress Dashboard"){:.screenshot}
 
 WordPress Netwerk van sites
 ---------------------------
@@ -453,7 +453,7 @@ Sla het bestand op en herlaadt Sitebeheer in de browser.
 
 Onder **Extra** → **Netwerk instellen** kan je **submappen** inschakelen. Je krijgt de nodige aanpassingen te zien.
 
-![Netwerk Instellen]({{ site.baseurl }}/images/installatie/netwerk_instellen.png "Netwerk Instellen")
+![Netwerk Instellen]({{ site.baseurl }}/images/installatie/netwerk_instellen.png "Netwerk Instellen"){:.screenshot}
 
 
 {% comment %}

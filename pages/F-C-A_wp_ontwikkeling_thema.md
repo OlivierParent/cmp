@@ -27,27 +27,27 @@ We gaan het Thema **DevDMBootstrap3** toevoegen.
 
 **Weergave** → **Thema's** en klik op **Nieuwe toevoegen**.
 
-![Thema Toevoegen 00]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.00.png "Thema Toevoegen 00")
+![Thema Toevoegen 00]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.00.png "Thema Toevoegen 00"){:.screenshot}
 
 Typ "DevDMBootstrap3" in het veld "Thema's doorzoeken…". 
 
-![Thema Toevoegen 01]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.01.png "Thema Toevoegen 01")
+![Thema Toevoegen 01]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.01.png "Thema Toevoegen 01"){:.screenshot}
 
 Hover over het Thema en klik op **Installeren**. 
 
-![Thema Toevoegen 02]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.02.png "Thema Toevoegen 02")
+![Thema Toevoegen 02]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.02.png "Thema Toevoegen 02"){:.screenshot}
 
 Eens het Thema geïnstalleerd is, kan je terugkeren naar **Thema's**.
 
-![Thema Toevoegen 03]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.03.png "Thema Toevoegen 03")
+![Thema Toevoegen 03]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.03.png "Thema Toevoegen 03"){:.screenshot}
 
 Het nieuwe Thema staat nu in de lijst. Het moet niet geactiveerd worden, want we gaan het niet rechtstreeks gebruiken, maar wel via een **Childthema**.
 
-![Thema Toevoegen 04]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.04.png "Thema Toevoegen 04")
+![Thema Toevoegen 04]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.04.png "Thema Toevoegen 04"){:.screenshot}
 
 Je kan wel een **Live voorbeeld** bekijken.
 
-![Thema Toevoegen 05]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.05.png "Thema Toevoegen 05")
+![Thema Toevoegen 05]({{ site.baseurl }}/images/ontwikkeling/thema/devdmboostrap.05.png "Thema Toevoegen 05"){:.screenshot}
 
 Thema Ontwikkelen
 -----------------
@@ -161,7 +161,7 @@ In de commentaar staan de **metagegevens** van het Thema.
 
 Nadat je `style.css` opgeslagen hebt, zal het in de **Sitebeheer** onder Thema's is de lijst verschijnen.
 
-![Childthema 00]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.00.png "Childthema 00")
+![Childthema 00]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.00.png "Childthema 00"){:.screenshot}
 
 #### Childthema Activeren
 
@@ -169,25 +169,25 @@ Een Childthema kan je activeren zoals een gewoon Thema.
 
 Voor je een thema activeert kan je een **Live voorbeeld** bekijken. Op dit ogenblik is het Childthema nog identiek aan het Parentthema.
 
-![Childthema 01]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.01.png "Childthema 01")
+![Childthema 01]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.01.png "Childthema 01"){:.screenshot}
  
 Ga terug naar **Thema's** door op de knop in de linker bovenhoek te klikken en klik daarna op op de knop **Activeren**.
 
-![Childthema 02]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.02.png "Childthema 02")
+![Childthema 02]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.02.png "Childthema 02"){:.screenshot}
 
 Het actieve Thema staat **eerst** in de lijst.
 
 Je kan een aantal instellingen van het Thema aanpassen door op de knop **Customizer** te klikken, of je kan de details bekijken door op de afbeelding te klikken.
 
-![Childthema 03]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.03.png "Childthema 03")
+![Childthema 03]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.03.png "Childthema 03"){:.screenshot}
 
 De detailpagina toont de **metagegevens** die we in `styles.css` geplaatst hebben. 
 
-![Childthema 04]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.04.png "Childthema 04")
+![Childthema 04]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.04.png "Childthema 04"){:.screenshot}
 
 Het actieve Thema kan je op de [website](http://www.cmp.arteveldehogeschool.local) zien. 
 
-![Childthema 05]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.05.png "Childthema 05")
+![Childthema 05]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.05.png "Childthema 05"){:.screenshot}
 
 
 {% comment %}
