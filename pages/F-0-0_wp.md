@@ -1,7 +1,7 @@
 ---
 layout    : page
 title     : WordPress
-title_long: WordPress 4.3
+title_long: WordPress 4.4
 permalink : wp/
 published : true
 tags      :
