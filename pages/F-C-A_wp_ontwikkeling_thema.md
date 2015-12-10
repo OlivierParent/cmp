@@ -82,7 +82,7 @@ Alle geïnstalleerde Thema's staan in de map `themes`
 > │               ├── devdmbootstrap3/
 > │               ├── twentyfifteen/
 > │               ├── twentyfourteen/
-> │               └── twentythirteen/
+> │               └── twentysixteen/
 > └── README.md
 >```
 {:.card .card-block}
@@ -136,7 +136,7 @@ Een Thema moet verplicht een aantal bestanden bevatten:
 > │               ├── devdmbootstrap3/
 > │               ├── twentyfifteen/
 > │               ├── twentyfourteen/
-> │               └── twentythirteen/
+> │               └── twentysixteen/
 > └── README.md
 >```
 {:.card .card-block}
@@ -147,7 +147,7 @@ We maken een nieuwe **map** `arteveldehogeschool/` in de map `wordpress/wp-conte
 
 ##### `screenshot.png`
 
-en zetten er een **afbeelding** in met de naam `screenshot.png`. Deze afbeelding moet een verhouding `4:3` hebben en bij voorkeur een afmeting van `880×660 px`.
+en zetten er een **afbeelding** in met de naam `screenshot.png`. Deze afbeelding moet een verhouding `4:3` hebben en bij voorkeur een afmeting van `1200×900 px`.
 
 ##### `style.css`
 
