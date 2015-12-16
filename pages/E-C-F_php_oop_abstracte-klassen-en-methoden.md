@@ -14,6 +14,6 @@ In een abstracte klasse zijn alle geïmplementeerd methoden de facto statische m
 Abstracte klassen zijn van nut bij overerving, een child-klassen **moet** namelijk de abstracte methodes implementeren.
 
 {% highlight php %}
-<!-- oop/abstracte_klasse.php -->
+oop/abstracte_klasse.php
 {% include_relative _code/php/oop/abstracte_klasse.php %}
 {% endhighlight %}

@@ -15,6 +15,6 @@ Bij het importeren van een bestand heeft de naamruimte enkel betrekking op de co
 Om het werken met naamruimten eenvoudiger te maken, kunnen er aliassen gemaakt worden voor de naamruimten of voor de klassenaam via het sleutelwoord `use`. Standaard wordt de laatste deel van de volledig gespecificeerde naam als alias gebruikt, maar met het sleutelwoord `as` kan ook zelf de aliasnaam gespecificeerd worden. Meerdere aliassen kunnen tegelijk gedefinieerd worden, telkens gescheiden door een komma.
 
 {% highlight php %}
-<!-- oop/naamruimten.php -->
+oop/naamruimten.php
 {% include_relative _code/php/oop/naamruimten.php %}
 {% endhighlight %}

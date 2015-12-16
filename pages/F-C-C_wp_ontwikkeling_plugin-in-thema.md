@@ -33,7 +33,14 @@ Eerst moeten we een sjablonen maken voor dergelijke pagina's:
 >```
 {:.card .card-block}
 
+{% highlight php %}
+page-graphic_terms.php
+{% include_relative _code/wp/ontwikkeling/plugin-in-thema/page-graphic_terms.php %}
+{% endhighlight %}
 
+{% highlight php %}
+{% include_relative _code/wp/ontwikkeling/plugin-in-thema/single-graphic_term.php %}
+{% endhighlight %}
 
 {% comment %}
 <!-- ⚓ Afkortingen -->

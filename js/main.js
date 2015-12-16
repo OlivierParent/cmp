@@ -43,5 +43,8 @@
         $highlights.each(function () {
             $(this).parents('.highlight').addClass('language-' + $(this).attr('data-lang'));
         });
+        
+        // Highlighter File Tag
+        $('.highlight span:first-child:contains("file:")').addClass('file');
     }
 })();

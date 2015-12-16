@@ -10,6 +10,6 @@ tags      :
 Als een methode niet meer veranderd mag worden door child-klassen, dan kan een methode als final gedeclareerd worden met het sleutelwoord `final`.
 
 {% highlight php %}
-<!-- oop/finale_methode.php -->
+oop/finale_methode.php
 {% include_relative _code/php/oop/finale_methode.php %}
 {% endhighlight %}

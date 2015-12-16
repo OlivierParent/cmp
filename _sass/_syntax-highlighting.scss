@@ -1,8 +1,8 @@
 @mixin label($text: "Code", $background: $color-G, $text-color: white) {
     position: relative;
-    &::before{
+    &::after{
         background: $background;
-        border-radius: 0 0 0 3px;
+        border-radius: 0 0 0 .3rem;
         color: $text-color;
         content: $text;
         display: inline-block;
@@ -96,5 +96,18 @@ div.linenodiv {
         color: inherit;
         padding: 1rem;
         margin: 0;
+        code {
+            span.file:first-child {
+                background-color: $base03;
+                border-radius: 0 0 .3rem;
+                color: #FFF;
+                height: 2rem;
+                left:0;
+                line-height: 2rem;
+                padding: 0 .7rem 0 .5rem;
+                position: absolute;
+                top: 0;
+            }
+        }
     }
 }

@@ -12,7 +12,7 @@ Windows
 -------
 
 {% highlight php %}
-<!-- shell/win.php -->
+shell/win.php
 {% include_relative _code/php/shell/win.php %}
 {% endhighlight %}
 

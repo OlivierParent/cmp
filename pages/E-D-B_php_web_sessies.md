@@ -11,7 +11,7 @@ Om gegevens gedurende een browsersessie op te slaan worden sessievariabelen gebr
 Een sessie onmiddellijk leegmaken moet[^1] met `$_SESSION = []` of als de sessie pas na het beëindigen van het script leegmaken kan met `session_destroy()` (`$_SESSION` blijft ondertussen bestaan zodat dit gebruikt kan worden voor bijvoorbeeld een gepersonaliseerde pagina met 'U bent nu afgemeld').
 
 {% highlight php %}
-<!-- web/formulier/sessies.php -->
+web/formulier/sessies.php
 {% include_relative _code/php/web/formulier/sessies.php %}
 {% endhighlight %}
 

@@ -17,7 +17,7 @@ Per conventie wordt aangeraden om:
  - constanten als klasseconstante te definiëren (zie hoofdstuk Objectgeoriënteerd Programmeren).
 
 {% highlight php %}
-<!-- basis/constante.php -->
+basis/constante.php
 {% include_relative _code/php/basis/constante.php %}
 {% endhighlight %}
 

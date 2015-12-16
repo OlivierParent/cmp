@@ -30,7 +30,7 @@ Pseudovariabele `$this`
 Binnen de klasse kan men naar de instantie (het object) verwijzen met de **pseudovariabele** `$this`, members en methodes worden via de operator `->`[^1] aangesproken.
 
 {% highlight php %}
-<!-- oop/oop.php -->
+oop/oop.php
 {% include_relative _code/php/oop/oop.php %}
 {% endhighlight %}
 

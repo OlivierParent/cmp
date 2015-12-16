@@ -154,6 +154,7 @@ en zetten er een **afbeelding** in met de naam `screenshot.png`. Deze afbeelding
 In de map zetten we ook een **stylesheet** met de naam `style.css`:
 
 {% highlight css %}
+/* file: style.css */
 {% include_relative _code/wp/ontwikkeling/thema/style.00.css %}
 {% endhighlight %}
 

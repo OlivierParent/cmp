@@ -23,7 +23,7 @@ Versie
 ------
 
 {% highlight php %}
-<!-- databases/sqlite3/versie.php -->
+databases/sqlite3/versie.php
 {% include_relative _code/php/databases/sqlite3/versie.php %}
 {% endhighlight %}
  
@@ -33,7 +33,7 @@ Objectgeoriënteerd
 Vanaf PHP 5.3 kan SQLite3 via een object aangesproken worden.
 
 {% highlight php %}
-<!-- databases/sqlite3/sqlite3.php -->
+databases/sqlite3/sqlite3.php
 {% include_relative _code/php/databases/sqlite3/sqlite3.php %}
 {% endhighlight %}
 
@@ -57,7 +57,7 @@ Prepared statements kunnen op twee manieren werken.
 Voor de meeste situaties zal `bindValue()` volstaan.
 
 {% highlight php %}
-<!-- databases/sqlite3/prepstat.php -->
+databases/sqlite3/prepstat.php
 {% include_relative _code/php/databases/sqlite3/prepstat.php %}
 {% endhighlight %}
 

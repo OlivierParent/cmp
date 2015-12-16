@@ -20,7 +20,7 @@ In PHP kunnen de operatoren opgedeeld worden volgens het aantal operanden:
 ### Unaire operatoren
 
 {% highlight php %}
-<!-- basis/operator/unair.php -->
+basis/operator/unair.php
 {% include_relative _code/php/basis/operator/unair.php %}
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ In PHP kunnen de operatoren opgedeeld worden volgens het aantal operanden:
 ### Binaire operatoren
 
 {% highlight php %}
-<!-- basis/operator/binair.php -->
+basis/operator/binair.php
 {% include_relative _code/php/basis/operator/binair.php %}
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ In PHP kunnen de operatoren opgedeeld worden volgens het aantal operanden:
 De enige ternaire operator is de conditionele operator. Deze zeer vaak toegepaste operator is eigenlijk een verkorte versie van een `if` … `else` … lus.
 
 {% highlight php %}
-<!-- basis/operator/ternair.php -->
+basis/operator/ternair.php
 {% include_relative _code/php/basis/operator/ternair.php %}
 {% endhighlight %}
 

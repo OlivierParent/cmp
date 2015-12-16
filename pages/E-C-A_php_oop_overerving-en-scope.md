@@ -38,7 +38,7 @@ Om een instantiemethode (een niet-statische methode) uit een andere klasse aan t
 {:.table}
 
 {% highlight php %}
-<!-- oop/overerving_scope.php -->
+oop/overerving_scope.php
 {% include_relative _code/php/oop/overerving_scope.php %}
 {% endhighlight %}
  

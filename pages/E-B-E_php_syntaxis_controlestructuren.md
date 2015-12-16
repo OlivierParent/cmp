@@ -20,14 +20,14 @@ Structureer de statements en expressies zodanig dat de code makkelijk te interpr
 #### Normale syntaxis
 
 {% highlight php %}
-<!-- basis/controlestructuren/conditioneel/if_else.php -->
+basis/controlestructuren/conditioneel/if_else.php
 {% include_relative _code/php/basis/controlestructuren/conditioneel/if_else.php %}
 {% endhighlight %}
 
 #### Alternatieve syntaxis[^alt]
 
 {% highlight php %}
-<!-- basis/controlestructuren/conditioneel/if_else_alternatief.php -->
+basis/controlestructuren/conditioneel/if_else_alternatief.php
 {% include_relative _code/php/basis/controlestructuren/conditioneel/if_else_alternatief.php %}
 {% endhighlight %}
 
@@ -38,14 +38,14 @@ Dit statement komt overeen met een **losse vergelijking**[^1]. Een `default` op 
 #### Normale syntaxis
 
 {% highlight php %}
-<!-- basis/controlestructuren/conditioneel/switch_case.php -->
+basis/controlestructuren/conditioneel/switch_case.php
 {% include_relative _code/php/basis/controlestructuren/conditioneel/switch_case.php %}
 {% endhighlight %}
 
 #### Alternatieve syntaxis[^alt]
 
 {% highlight php %}
-<!-- basis/controlestructuren/conditioneel/switch_case_alternatief.php -->
+basis/controlestructuren/conditioneel/switch_case_alternatief.php
 {% include_relative _code/php/basis/controlestructuren/conditioneel/switch_case_alternatief.php %}
 {% endhighlight %}
 
@@ -59,14 +59,14 @@ Voert een lus uit zolang aan een bepaalde conditie voldaan wordt.
 #### Normale syntaxis
 
 {% highlight php %}
-<!-- basis/controlestructuren/lus/while.php -->
+basis/controlestructuren/lus/while.php
 {% include_relative _code/php/basis/controlestructuren/lus/while.php %}
 {% endhighlight %}
 
 #### Alternatieve syntaxis[^alt]
 
 {% highlight php %}
-<!-- basis/controlestructuren/lus/while_alternatief.phpv -->
+basis/controlestructuren/lus/while_alternatief.php
 {% include_relative _code/php/basis/controlestructuren/lus/while_alternatief.php %}
 {% endhighlight %}
 
@@ -82,14 +82,14 @@ Dit is eigenlijk een compactere versie van een speciale `while`-lus.
 #### Normale syntaxis
 
 {% highlight php %}
-<!-- basis/controlestructuren/lus/for.php -->
+basis/controlestructuren/lus/for.php
 {% include_relative _code/php/basis/controlestructuren/lus/for.php %}
 {% endhighlight %}
 
 #### Alternatieve syntaxis[^alt]
 
 {% highlight php %}
-<!-- basis/controlestructuren/lus/for_alternatief.php -->
+basis/controlestructuren/lus/for_alternatief.php
 {% include_relative _code/php/basis/controlestructuren/lus/for_alternatief.php %}
 {% endhighlight %}
 
@@ -100,21 +100,21 @@ Deze `for`-lus is speciaal gemaakt om over arrays en objecten (enkel member-vari
 In volgend voorbeeld gebruiken we zowel een array als een object op basis van onderstaande klasse.
 
 {% highlight php %}
-<!-- basis/controlestructuren/lus/MijnObject.php -->
+basis/controlestructuren/lus/MijnObject.php
 {% include_relative _code/php/basis/controlestructuren/lus/MijnObject.php %}
 {% endhighlight %}
 
 #### Normale syntaxis
 
 {% highlight php %}
-<!-- basis/controlestructuren/lus/foreach.php -->
+basis/controlestructuren/lus/foreach.php
 {% include_relative _code/php/basis/controlestructuren/lus/foreach.php %}
 {% endhighlight %}
 
 #### Alternatieve syntaxis[^alt]
 
 {% highlight php %}
-<!-- basis/controlestructuren/lus/foreach_alternatief.php -->
+basis/controlestructuren/lus/foreach_alternatief.php
 {% include_relative _code/php/basis/controlestructuren/lus/foreach_alternatief.php %}
 {% endhighlight %}
 
@@ -123,7 +123,7 @@ In volgend voorbeeld gebruiken we zowel een array als een object op basis van on
 Deze lus is vergelijkbaar met de `while`-lus, alleen wordt de expressie pas op het einde geëvalueerd. De lus wordt dus altijd minstens één keer uitgevoerd, ook als de conditie ONWAAR is.
 
 {% highlight php %}
-<!-- basis/controlestructuren/lus/do_while.php -->
+basis/controlestructuren/lus/do_while.php
 {% include_relative _code/php/basis/controlestructuren/lus/do_while.php %}
 {% endhighlight %}
 

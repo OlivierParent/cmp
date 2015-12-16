@@ -35,7 +35,7 @@ PDO ondersteunt onder meer volgende databases:
 Ondersteuning hangt ook af van de serverconfiguratie. Om te weten welke databases de server ondersteunt, kan je de statische methode `getAvailableDrivers()` van de PDO-klasse aanroepen.
 
 {% highlight php %}
-<!-- databases/pdo/ondersteuning.php -->
+databases/pdo/ondersteuning.php
 {% include_relative _code/php/databases/pdo/ondersteuning.php %}
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ Met PDO volstaan enkele minieme wijziging aan je code om een andere soortdatabas
 In onderstaand voorbeeld gebruiken we een tijdelijke SQLite3 database in het RAM-geheugen van de databaseserver. Door de boolean `$isSQLite` te wijzigen in `false`, wordt er een MySQL database gebruikt (zorg er wel voor dat de naam van het database schema en de gegevens van de databasegebruiker kloppen met je eigen serveropstelling).
 
 {% highlight php %}
-<!-- databases/pdo/connectie_openen.php -->
+databases/pdo/connectie_openen.php
 {% include_relative _code/php/databases/pdo/connectie_openen.php %}
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ De connectie wordt automatisch gesloten na het einde van het PHP-script. Soms zi
 {:.alert .alert-info}
 
 {% highlight php %}
-<!-- databases/pdo/connectie_sluiten.php -->
+databases/pdo/connectie_sluiten.php
 {% include_relative _code/php/databases/pdo/connectie_sluiten.php %}
 {% endhighlight %}
 
@@ -98,7 +98,7 @@ Voor je een nieuwe tabel maakt moet je eerst de tabellen met dezelfde naam verwi
 {:.alert .alert-info}
 
 {% highlight php %}
-<!-- databases/pdo/drop_table.php -->
+databases/pdo/drop_table.php
 {% include_relative _code/php/databases/pdo/drop_table.php %}
 {% endhighlight %}
 
@@ -107,7 +107,7 @@ Voor je een nieuwe tabel maakt moet je eerst de tabellen met dezelfde naam verwi
 Om te vermijden dat de databaseserver een foutmeldiging zal geven als er al een tabel bestaat met dezelfde naam, kan je IF NOT EXISTS gebruiken in je SQL-statement.
 
 {% highlight php %}
-<!-- databases/pdo/create_table.php -->
+databases/pdo/create_table.php
 {% include_relative _code/php/databases/pdo/create_table.php %}
 {% endhighlight %}
 
@@ -139,33 +139,33 @@ Het prepared statement wordt pas effectief uitgevoerd als de methode `execute()`
 {:.alert .alert-warning}
 
 {% highlight php %}
-<!-- databases/pdo/create_insert.php -->
+databases/pdo/create_insert.php
 {% include_relative _code/php/databases/pdo/create_insert.php %}
 {% endhighlight %}
 
 ### Gegevens inlezen *(Read)*
 
 {% highlight php %}
-<!-- databases/pdo/read_select.php -->
+databases/pdo/read_select.php
 {% include_relative _code/php/databases/pdo/read_select.php %}
 {% endhighlight %}
 
 {% highlight php %}
-<!-- databases/pdo/read_select_where.php -->
+databases/pdo/read_select_where.php
 {% include_relative _code/php/databases/pdo/read_select_where.php %}
 {% endhighlight %}
 
 ### Gegevens bijwerken *(Update)*
 
 {% highlight php %}
-<!-- databases/pdo/update.php -->
+databases/pdo/update.php
 {% include_relative _code/php/databases/pdo/update.php %}
 {% endhighlight %}
  
 ### Gegevens verwijderen *(Delete/Drop)*
 
 {% highlight php %}
-<!-- databases/pdo/drop_delete.php -->
+databases/pdo/drop_delete.php
 {% include_relative _code/php/databases/pdo/drop_delete.php %}
 {% endhighlight %}
  

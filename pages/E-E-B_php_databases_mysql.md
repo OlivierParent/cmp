@@ -19,7 +19,7 @@ Sinds PHP 5.3 kan er van het systeemeigen stuurprogramma voor MySQL gebruik gema
 In het volgende voorbeeld wordt de OOP manier gebruikt, de procedurele manier bestaat ook maar de voorkeur gaat uit naar de OOP versie.
 
 {% highlight php %}
-<!-- databases/mysql/mysql.php -->
+databases/mysql/mysql.php
 {% include_relative _code/php/databases/mysql/mysql.php %}
 {% endhighlight %}
 

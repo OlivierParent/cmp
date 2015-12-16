@@ -22,7 +22,7 @@ Om dit nadeel weg te werken en ook om het verwijzen naar de constructor van een 
 Een destructor-methode `__destruct()` bestaat ook en werkt exact hetzelfde, maar wordt uitgevoerd wanneer een object vernietigd wordt. Hoewel objecten vanzelf opgeruimd worden nadat het script uitgevoerd is, kan een destructor handig zijn om bijvoorbeeld databaseconnectie netjes af te sluiten en zo de connectie terug vrij te geven. Zo kunnen andere scripts die connectie al hergebruiken terwijl het script nog bezig is met bijvoorbeeld de pagina te renderen.
 
 {% highlight php %}
-<!-- oop/magisch/constructor_destructor.php -->
+oop/magisch/constructor_destructor.php
 {% include_relative _code/php/oop/magisch/constructor_destructor.php %}
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ Object naar string converteren
 Wanneer impliciete of expliciete typeconversie naar een string op een object uitgevoerd wordt, dan wordt de magische methode `__toString()` automatisch aangeroepen.
 
 {% highlight php %}
-<!-- oop/magisch/tostring.php -->
+oop/magisch/tostring.php
 {% include_relative _code/php/oop/magisch/tostring.php %}
 {% endhighlight %}
 

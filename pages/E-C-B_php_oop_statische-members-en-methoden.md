@@ -24,6 +24,6 @@ Het sleutelwoord `static` wordt gebruikt om member-variabelen en methoden rechts
 Tenslotte is er ook nog een magische constante `__CLASS__` die hetzelfde resultaat geeft als `self`.
 
 {% highlight php %}
-<!-- oop/statisch.php -->
+oop/statisch.php
 {% include_relative _code/php/oop/statisch.php %}
 {% endhighlight %}

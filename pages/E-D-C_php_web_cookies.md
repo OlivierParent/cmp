@@ -9,7 +9,7 @@ tags     :
 Cookies worden met de functie `setcookie()` gezet. Door de cookie opnieuw te zetten, maar dan met de vervaldatum in het verleden, zal de browser de cookie verwijderen.
 
 {% highlight php %}
-<!-- web/formulier/cookies.php -->
+web/formulier/cookies.php
 {% include_relative _code/php/web/formulier/cookies.php %}
 {% endhighlight %}
 

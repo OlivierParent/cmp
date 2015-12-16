@@ -18,12 +18,12 @@ Een efficientere methode is een salt te gebruiken. Dit is een unieke code die je
 Om een systeem veilig te houden is het nodig om af en toe de manier van hashen — het hashalgoritme — te verbeteren. Vandaar dat men het gebruikte hashalgoritme en salt samen met het wachtwoord opslaat. Zo kunnen verschillende algorimtes naast elkaar gebruikt worden, en kan een gebruiker die nog een minder veilige hashcode heeft, bij het inloggen automatisch een nieuwe, veiligere hashcode krijgen.
 
 {% highlight php %}
-<!-- web/beveiliging/wachtwoord_hashen.php -->
+web/beveiliging/wachtwoord_hashen.php
 {% include_relative _code/php/web/beveiliging/wachtwoord_hashen.php %}
 {% endhighlight %}
 
 {% highlight php %}
-<!-- web/beveiliging/wachtwoord_verifieren.php -->
+web/beveiliging/wachtwoord_verifieren.php
 {% include_relative _code/php/web/beveiliging/wachtwoord_verifieren.php %}
 {% endhighlight %}
 

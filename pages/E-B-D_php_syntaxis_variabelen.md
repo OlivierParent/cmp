@@ -18,7 +18,7 @@ Per conventie wordt aangeraden om:
  - cijfers te vermijden.
 
 {% highlight php %}
-<!-- basis/variabele/variabele.php -->
+basis/variabele/variabele.php
 {% include_relative _code/php/basis/variabele/variabele.php %}
 {% endhighlight %}
 
@@ -28,7 +28,7 @@ Lege variabelen
 Met de functie `empty()` kun je bepalen of een variabele leeg is of een waarde heeft die daarmee overeenkomt. Om te bepalen of een variabele een waarde toegewezen heeft gekregen gebruik je de functie `isset()`.
 
 {% highlight php %}
-<!-- basis/variabele/leeg.php -->
+basis/variabele/leeg.php
 {% include_relative _code/php/basis/variabele/leeg.php %}
 {% endhighlight %}
 

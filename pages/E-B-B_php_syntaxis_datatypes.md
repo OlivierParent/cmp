@@ -22,7 +22,7 @@ Deze types kunnen slechts één waarde bevatten en kunnen als de elementaire dat
 De booleaanse waarde is ofwel waar of onwaar. Om die status aan te geven worden de sleutelwoorden `true` en `false` gebruikt.
 
 {% highlight php %}
-<!-- basis/datatype/scalair/boolean.php -->
+basis/datatype/scalair/boolean.php
 {% include_relative _code/php/basis/datatype/scalair/boolean.php %}
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ De booleaanse waarde is ofwel waar of onwaar. Om die status aan te geven worden 
 Een geheel getal in PHP kan ofwel decimaal (10-delig), octaal (8-delig) of hexadecimaal (16-delig) zijn.
 
 {% highlight php %}
-<!-- basis/datatype/scalair/integer.php -->
+basis/datatype/scalair/integer.php
 {% include_relative _code/php/basis/datatype/scalair/integer.php %}
 {% endhighlight %}
 
@@ -40,7 +40,7 @@ Een geheel getal in PHP kan ofwel decimaal (10-delig), octaal (8-delig) of hexad
 Een floating point of een drijvendekommagetal[^1] kan met een exponentiële notatie geschreven met een hoofdletterongevoelige `E`.
 
 {% highlight php %}
-<!-- basis/datatype/scalair/float.php -->
+basis/datatype/scalair/float.php
 {% include_relative _code/php/basis/datatype/scalair/float.php %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ Een floating point of een drijvendekommagetal[^1] kan met een exponentiële nota
 In PHP kan je een tekenstring met zowel een **apostrof** (`'`) als een **aanhalingsteken** (`"`) definiëren. Met een apostroffen maak je een tekenconstante (Eng: *string literal*), terwijl aanhalingstekens ook **variabeleninterpolatie** (**variabelensubstitutie**) ondersteunen.
 
 {% highlight php %}
-<!-- basis/datatype/scalair/tekenstring.php -->
+basis/datatype/scalair/tekenstring.php
 {% include_relative _code/php/basis/datatype/scalair/tekenstring.php %}
 {% endhighlight %}
 
@@ -88,7 +88,7 @@ Een lege array maak je door `[]` toe te wijzen aan een variabele.
 Bij een **enumeratieve array** worden de sleutels automatisch aangemaakt. De eerste sleutel wordt dan `0`, de volgende sleutel `1` enz.
 
 {% highlight php %}
-<!-- basis/datatype/samengesteld/array/enumeratief.php -->
+basis/datatype/samengesteld/array/enumeratief.php
 {% include_relative _code/php/basis/datatype/samengesteld/array/enumeratief.php %}
 {% endhighlight %}
 
@@ -97,7 +97,7 @@ Bij een **enumeratieve array** worden de sleutels automatisch aangemaakt. De eer
 Bij een **associatieve** array ken je zelf een sleutel toe. Sleutels in arrays zijn hoofdlettergevoelig, maar typeongevoelig. Bij het definiëren of opvragen van een sleutel wordt, indien mogelijk, ook een typeconversie naar integer gedaan. Indien dat niet lukt, wordt de sleutel een string.
 
 {% highlight php %}
-<!-- basis/datatype/samengesteld/array/associatief.php -->
+basis/datatype/samengesteld/array/associatief.php
 {% include_relative _code/php/basis/datatype/samengesteld/array/associatief.php %}
 {% endhighlight %}
 
@@ -106,7 +106,7 @@ Bij een **associatieve** array ken je zelf een sleutel toe. Sleutels in arrays z
 Enumeratief en associatief kunnen ook samen gebruikt worden.
 
 {% highlight php %}
-<!-- basis/datatype/samengesteld/array/combinatie.php -->
+basis/datatype/samengesteld/array/combinatie.php
 {% include_relative _code/php/basis/datatype/samengesteld/array/combinatie.php %}
 {% endhighlight %}
 
@@ -115,7 +115,7 @@ Enumeratief en associatief kunnen ook samen gebruikt worden.
 De waarden in een array kunnen zelf ook een array zijn. In dat geval spreekt men over mutidimensionale arrays.
 
 {% highlight php %}
-<!-- basis/datatype/samengesteld/array/multidimensioneel.php -->
+basis/datatype/samengesteld/array/multidimensioneel.php
 {% include_relative _code/php/basis/datatype/samengesteld/array/multidimensioneel.php %}
 {% endhighlight %}
 
@@ -157,7 +157,7 @@ Het type van een variabele kan met behulp van functies getest worden, deze funct
 {:.table}
 
 {% highlight php %}
-<!-- basis/datatype/typebepaling.php -->
+basis/datatype/typebepaling.php
 {% include_relative _code/php/basis/datatype/typebepaling.php %}
 {% endhighlight %}
 
@@ -169,7 +169,7 @@ Typeconversie *(Casting)*
 PHP is een taal met zwakke typering, het is zelfs niet mogelijk om een variabele te declareren als zijnde van een bepaald type. Welk type een bepaalde waarde heeft hangt af van de waarde en de context waarin deze waarde gebruikt wordt. Zo zal een string bij een optelling automatisch naar een integer of float geconverteerd worden.
 
 {% highlight php %}
-<!-- basis/datatype/typeconversie/impliciet.php -->
+basis/datatype/typeconversie/impliciet.php
 {% include_relative _code/php/basis/datatype/typeconversie/impliciet.php %}
 {% endhighlight %}
 

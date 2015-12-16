@@ -13,6 +13,6 @@ Traits lijken op vereenvoudigde klassen en worden gedefinieerd met het sleutelwo
 Een trait gebruiken in een klasse doe je met het sleutelwoord `use`.
 
 {% highlight php %}
-<!-- oop/trait.php -->
+oop/trait.php
 {% include_relative _code/php/oop/trait.php %}
 {% endhighlight %}

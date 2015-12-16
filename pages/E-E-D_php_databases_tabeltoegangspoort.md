@@ -11,7 +11,7 @@ PHP-code en SQL-code mixen leidt vaak tot onoverzichtelijke code. Soms wordt SQL
 Onderstaand voorbeeld ligt een beetje in dezelfde lijn. Er is één object per tabel en alle SQL-code is opgeslagen in member-constanten. Alle communicatie van en naar de tabel verloopt via dat ene object. De twee objecten `$db` en `$gebruikers `zijn beiden de enige instantie van hun klasse, zodat ze in principe het **Singleton**-ontwerppatroon[^1] volgen.
 
 {% highlight php %}
-<!-- databases/tabeltoegangspoort.php -->
+databases/tabeltoegangspoort.php
 {% include_relative _code/php/databases/tabeltoegangspoort.php %}
 {% endhighlight %}
 

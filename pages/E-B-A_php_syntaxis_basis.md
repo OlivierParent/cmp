@@ -11,14 +11,14 @@ Codeafbakening
 PHP wordt vaak in combinatie met HTML gebruikt. Om de PHP-parser het onderscheid tussen HTML- en PHP-code duidelijk te maken, wordt de code afgebakend met speciale tags. Alles wat buiten deze tags staat wordt door de parser genegeerd.
 
 {% highlight php %}
-<!-- basis/codeafbakening/html.php -->
+basis/codeafbakening/html.php
 {% include_relative _code/php/basis/codeafbakening/html.php %}
 {% endhighlight %}
 
 Voor bestanden die enkel PHP bevatten (dus geen HTML of dergelijke) wordt aangeraden om geen eindtag te gebruiken (`?>`). PHP vereist dit niet, en het heeft als bijkomend voordeel dat er geen onnodige witruimte aan het serverantwoord toegevoegd wordt. Het is wel aangeraden om als laatste lijn een lege regel te hebben.
 
 {% highlight php %}
-<!-- basis/codeafbakening/php.php -->
+basis/codeafbakening/php.php
 {% include_relative _code/php/basis/codeafbakening/php.php %}
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ Er bestaan nog andere tags, waaronder de populaire **snelschriftversie** en ASP-
 {:.alert .alert-info}
 
 {% highlight php %}
-<!-- basis/codeafbakening/snelschrift.php -->
+basis/codeafbakening/snelschrift.php
 {% include_relative _code/php/basis/codeafbakening/snelschrift.php %}
 {% endhighlight %}
 
@@ -40,7 +40,7 @@ Opdrachtbeëindiging
 Net zoals in andere op C-gebaseerde programmeertalen[^1], wordt elke opdracht (**statement**) beëindigd met een **puntkomma** (`;`). Je kan een opdracht dus over verschillende regels te spreiden.
 
 {% highlight php %}
-<!-- basis/opdrachtbeeindiging.php -->
+basis/opdrachtbeeindiging.php
 {% include_relative _code/php/basis/opdrachtbeeindiging.php %}
 {% endhighlight %}
 
@@ -50,7 +50,7 @@ Commentaar
 PHP ondersteunt twee manieren van commentaar schrijven: de C-stijl en de Unix-shell-stijl. Deze laatste stijl is een overblijfsel uit de periode dat een deel van PHP bestond uit [Perl][perl]-scripts. De voorkeur gaat dus uit naar de C-stijl. De Unix-shell-stijl kan handig zijn om een lijn code tijdelijk in commentaar te zetten, zodat het onderscheid tussen permanente commentaar en tijdelijke commentaar duidelijk is.
 
 {% highlight php %}
-<!-- basis/commentaar/commentaar.php -->
+basis/commentaar/commentaar.php
 {% include_relative _code/php/basis/commentaar/commentaar.php %}
 {% endhighlight %}
 
@@ -76,7 +76,7 @@ Enkele fequent gebruikte [tags][phpdoc-tags] voor PHPDocumentor 2:
 Een voorbeeld van een fancy PhpDoc-blok
 
 {% highlight php %}
-<!-- basis/commentaar/phpdoc.php -->
+basis/commentaar/phpdoc.php
 {% include_relative _code/php/basis/commentaar/phpdoc.php %}
 {% endhighlight %}
 
@@ -94,12 +94,12 @@ Om code te importeren kun je kiezen uit `include` en `require`. Het verschil zit
 Bij een modulair opgebouwde toepassing kan het zijn dat er meerdere keren dezelfde code geïmporteerd wordt, ook al mag die code maar één keer voorkomen (zoals bijvoorbeeld een klassedeclaratie). Hiervoor bestaan `include_once` en `require_once`.
 
 {% highlight php %}
-<!-- basis/importeren/inhoud.php -->
+basis/importeren/inhoud.php
 {% include_relative _code/php/basis/importeren/inhoud.php %}
 {% endhighlight %}
 
 {% highlight php %}
-<!-- basis/importeren/include.php -->
+basis/importeren/include.php
 {% include_relative _code/php/basis/importeren/include.php %}
 {% endhighlight %}
 
