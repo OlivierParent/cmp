@@ -21,11 +21,13 @@ Plugins Beheren
 
 ### Plugin Updaten
 
-**Dashboard** → **Updates**, vink de nodige de Plugins aan en klik op **Plugins Bijwerken**.
+**Dashboard** → **Plugins**, vink de nodige de Plugins aan en klik op **nu bijwerken**.
 
-![Dashboard Updates 00](http://olivierparent.byethost18.com/_assets/CMP/Dashboard_Updates_00.png "Dashboard Updates 00"){:.screenshot}
+![Dashboard Updates 00]({{ site.baseurl }}/images/ontwikkeling/plugin/update.00.png "Dashboard Updates 00"){:.screenshot}
 
 Als de Plugins bijgewerkt zijn, kan je naar een andere pagina gaan.
+
+![Dashboard Updates 01]({{ site.baseurl }}/images/ontwikkeling/plugin/update.01.png "Dashboard Updates 01"){:.screenshot}
 
 Plugin Ontwikkelen
 ------------------
