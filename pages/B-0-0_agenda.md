@@ -53,4 +53,4 @@ Evaluatie
 {% comment %}
 <!-- ⚓ Hyperlinks -->
 {% endcomment %}
-[chamilo]:                  http://chamilo.arteveldehs.be
+[chamilo]:                  http://chamilo.arteveldehs.be/index.php?application=weblcms&go=course_viewer&course=7597
