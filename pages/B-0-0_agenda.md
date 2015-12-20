@@ -21,7 +21,7 @@ Evaluatie
 
 #### Din 12 jan 2016
 
-> ##### Uurrooster bekend *:clock9:*{:.pull-left .m-r}
+> ##### Uurrooster bekend op [Chamilo][chamilo] *:clock9:*{:.pull-left .m-r}
 {:.card .card-block}
 
 #### Woe 13 jan 2016
@@ -41,10 +41,16 @@ Evaluatie
 
 #### Woe 17 aug 2016
 
-> ##### Uurrooster bekend *:clock9:*{:.pull-left .m-r}
+> ##### Uurrooster bekend op [Chamilo][chamilo] *:clock9:*{:.pull-left .m-r}
 {:.card .card-block}
 
 #### ??? ?? aug 2016
 
 > ##### [Mondeling Examen]({{ '/opdracht/#milestone-exam-oral' | prepend: site.baseurl }}) *:speech_balloon:*{:.pull-left .m-r}
 {:.card .card-block}
+
+
+{% comment %}
+<!-- ⚓ Hyperlinks -->
+{% endcomment %}
+[chamilo]:                  http://chamilo.arteveldehs.be
