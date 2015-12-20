@@ -21,7 +21,8 @@ Evaluatie
 
 #### Din 12 jan 2016
 
-Uurrooster bekend.
+> ##### Uurrooster bekend *:clock9:*{:.pull-left .m-r}
+{:.card .card-block}
 
 #### Woe 13 jan 2016
 
@@ -40,7 +41,8 @@ Uurrooster bekend.
 
 #### Woe 17 aug 2016
 
-Uurrooster bekend.
+> ##### Uurrooster bekend *:clock9:*{:.pull-left .m-r}
+{:.card .card-block}
 
 #### ??? ?? aug 2016
 
