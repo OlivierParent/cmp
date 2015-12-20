@@ -44,6 +44,27 @@ Deliverables
      - Opleidingsinstelling: Arteveldehogeschool
    - Alle nodige gegevens om het werkstuk te deployen.
 
+Milestones
+----------
+
+> ##### Indienen *:checkered_flag:*{:.pull-left .m-r}
+> ---
+> Deliverables **opleveren**.
+>
+> - Dump maken van de database met `script/db_dump.sh`.
+> - Hele projectmap (`cmp.arteveldehogeschool.local`) **zippen** en via [WeTransfer][wt] doorsturen naar docent.  
+>   Aan de hand van de inzendingen wordt het uurrooster voor het examen opgesteld.
+{:#milestone-submit .card .card-block}
+
+> ##### Mondeling Examen *:speech_balloon:*{:.pull-left .m-r}
+> ---
+> Werkstuk **voorstellen** aan de jury.
+>
+> - Stel het werkstuk voor in maximaal **10 minuten**:
+>   - Live demonstraties
+>   - Screencast
+{:#milestone-exam-oral .card .card-block}
+
 Tips
 ----
 
@@ -78,3 +99,4 @@ Tips
 [ects-fiche]:				https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a=47526&b=5&c=1
 [hipchat]:                  https://www.hipchat.com/g0wZaWEvE
 [teamviewer]:               https://www.teamviewer.com/nl/index.aspx
+[wt]:                       https://www.teamviewer.com/nl/index.aspx

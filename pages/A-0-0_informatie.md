@@ -22,15 +22,30 @@ ECTS
 
 De studieomvang bedraagt **6 studiepunten** volgens het [European Credit Transfer and Accumulation System][ects].
 
-|   Activiteit           |   Uur   |
-|:-----------------------|--------:|
-|   Hoor en werkcolleges |    40   |
-|   Praktijk             |    14   |
-|   Zelfstudie           |   123   |
-|   Toets- en examentijd |     3   |
-|========================|=========|
-| **Totaal**             | **180** |
+
+|   Activiteit                              |   Uur                  |
+|:------------------------------------------|-----------------------:|
+|   **Hoor- en werkcolleges**{:.ahs-oranje} |  **40**{:.ahs-oranje}  |
+|   **Praktijk**{:.ahs-groen}               |  **14**{:.ahs-groen}   |
+|   **Zelfstudie**{:.ahs-fuchsia}           | **123**{:.ahs-fuchsia} |
+|   **Toets- en examentijd**{:.ahs-blauw}   |   **3**{:.ahs-blauw}   |
+|===========================================|========================|
+| **Totaal**                                | **180**                |
 {:.table}
+
+<div class="ct-chart ct-major-eleventh"></div>
+<script>
+var data = {
+  series: [ 40, 14, 123, 3 ]
+};
+var options = {
+  chartPadding: 60,
+  donut: true,
+  labelDirection: 'explode',
+  labelOffset: 40
+};
+new Chartist.Pie('.ct-chart', data, options);
+</script>
 
 > ##### **Tip** *:bulb:*{:.pull-left .m-r}
 > ---

@@ -172,3 +172,60 @@ body {
         }
     }
 }
+
+
+.ahs- {
+    &oranje {
+        color: $color-ahs-oranje;
+    }
+    &groen {
+        color: $color-ahs-groen;
+    }
+    &fuchsia {
+        color: $color-ahs-fuchsia;
+    }
+    &blauw {
+        color: $color-ahs-blauw;
+    }
+    &lichtgrijs {
+        color: $color-ahs-lichtgrijs;
+    }
+    &middengrijs {
+        color: $color-ahs-middengrijs;
+    }
+    &donkergrijs {
+        color: $color-ahs-donkergrijs;
+    }
+}
+
+/*
+ * Chartist
+ */
+@mixin donut-stroke($color) {
+    .ct-slice-donut {
+        stroke: $color;
+    }
+}
+
+.ct- {
+    &label {
+        font-size: 1em;
+    }
+    &series- {
+        &a {
+            @include donut-stroke($color-ahs-oranje);
+        }
+        &b {
+            @include donut-stroke($color-ahs-groen);
+        }
+        &c {
+            @include donut-stroke($color-ahs-fuchsia);
+        }
+        &d {
+            @include donut-stroke($color-ahs-blauw);
+        }
+        &e {
+            @include donut-stroke($color-ahs-donkergrijs);
+        }
+    }
+}
