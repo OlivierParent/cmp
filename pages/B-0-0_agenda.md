@@ -19,6 +19,10 @@ Evaluatie
 > ##### [Indienen]({{ '/opdracht/#milestone-submit' | prepend: site.baseurl }}) *:checkered_flag:*{:.pull-left .m-r}
 {:.card .card-block}
 
+#### Din 12 jan 2016
+
+Uurrooster bekend.
+
 #### Woe 13 jan 2016
 
 > ##### [Mondeling Examen]({{ '/opdracht/#milestone-exam-oral' | prepend: site.baseurl }}) *:speech_balloon:*{:.pull-left .m-r}
@@ -33,6 +37,10 @@ Evaluatie
 
 > ##### [Indienen]({{ '/opdracht/#milestone-submit' | prepend: site.baseurl }}) *:checkered_flag:*{:.pull-left .m-r}
 {:.card .card-block}
+
+#### Woe 17 aug 2016
+
+Uurrooster bekend.
 
 #### ??? ?? aug 2016
 
