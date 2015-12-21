@@ -218,6 +218,15 @@ In het bestand `db_backup.sh`:
 {% include_relative _code/wp/scripts/db_backup.sh %}
 {% endhighlight %}
 
+Dit script gebruik je zo:
+
+{% highlight bash %}
+vagrant@homestead$ cd ~/Code/cmp.arteveldehogeschool.local/www/
+vagrant@homestead$ scripts/db_backup.sh
+{% endhighlight %}
+
+Dit zal een bestand `latest.sql` wegschrijven in de map `scripts/db_dumps/`.
+
 ##### Restorescript
 
 Dit script herstelt de database op basis van de laatste backup in de map `scripts/dumps/`.

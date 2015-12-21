@@ -51,7 +51,7 @@ Milestones
 > ---
 > Deliverables **opleveren**.
 >
-> - Dump maken van de database met `script/db_backup.sh`.
+> - Dump maken van de database met `script/db_backup.sh`. Zie [Backuppen en terugzetten]({{ '/wp/installatie/#backuppen-en-terugzetten' | prepend: site.baseurl }})
 > - Hele projectmap (`cmp.arteveldehogeschool.local`) **zippen** en via [WeTransfer][wt] doorsturen naar docent.  
 >   Aan de hand van de inzendingen wordt het uurrooster voor het examen opgesteld.
 {:#milestone-submit .card .card-block}
