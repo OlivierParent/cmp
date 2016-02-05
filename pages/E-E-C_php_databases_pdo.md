@@ -74,7 +74,7 @@ databases/pdo/connectie_openen.php
 
 De connectie wordt automatisch gesloten na het einde van het PHP-script. Soms zit er een behoorlijke tijd tussen het einde van het script en laatste keer dat de databaseconnectie gebruikt wordt. Bijvoorbeeld wanneer een grote HTML-tabel met php gegenereerd wordt.
 
-> ##### **Opmerking** *:point_up:*{:.pull-left .m-r}
+> ##### **Opmerking** :point_up:
 > ---
 > Er is slechts een beperkt aantal databaseconnecties per databaseserver beschikbaar. Daarom is het belangrijk om een connectie zo snel mogelijk te sluiten, zodat die connectie door andere websitebezoekers opnieuw gebruikt kunnen worden.
 {:.alert .alert-info}
@@ -92,7 +92,7 @@ In onderstaande voorbeelden gaan we SQL-statements uitvoeren waarvan we geen res
 
 Voor je een nieuwe tabel maakt moet je eerst de tabellen met dezelfde naam verwijderen.
 
-> ##### **Opmerking** *:point_up:*{:.pull-left .m-r}
+> ##### **Opmerking** :point_up:
 > ---
 > In de gebruikte voorbeelden zal deze situatie nooit voorkomen. Onderstaand voorbeeld is dus ter illustratie.
 {:.alert .alert-info}
@@ -115,7 +115,7 @@ databases/pdo/create_table.php
 
 #### Met een Prepared Statement
 
-> ##### **Do's** *:thumbsup:*{:.pull-left .m-r}
+> ##### **Do's** :thumbsup:
 > ---
 > Maak zoveel mogelijk gebruik van prepared statements, want de uitvoering zal meestal iets sneller zijn en het biedt bescherming tegen SQL Injection-aanvallen.
 {:.alert .alert-success}
@@ -133,7 +133,7 @@ Voor de meeste situaties zal `bindValue()` volstaan.
 
 Het prepared statement wordt pas effectief uitgevoerd als de methode `execute()` aangeroepen wordt.
 
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ##### **Opgelet** :warning:
 > ---
 > Verwar `execute()` niet met de methode `exec()` van het databaseconnectieobject!
 {:.alert .alert-warning}

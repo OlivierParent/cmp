@@ -1,4 +1,6 @@
-
+{% if page.url == "/index.html" %}
+<img src="{{ '/images/logo_ahs_en.svg' | prepend: site.baseurl }}" width="100%">
+{% else %}
 <aside class="list-group m-b">
 {% for node in nodes %}
 {% assign node_level = node.path | remove: "pages/" | split: "_" | first | split: "-" %}
@@ -17,3 +19,4 @@
 {% endif %}
 {% endfor %}
 </aside>
+{% endif %}

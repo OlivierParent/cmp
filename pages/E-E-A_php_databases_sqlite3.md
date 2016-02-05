@@ -6,7 +6,7 @@ published: true
 tags     :
 ---
 
-> ##### **Do's** *:thumbsup:*{:.pull-left .m-r}
+> ##### **Do's** :thumbsup:
 > ---
 > Gebruik [PHP Data Objects](../pdo/) om een SQLite3 database aan te spreken!
 {:.alert .alert-success}

@@ -14,10 +14,10 @@ Eerst moeten we een sjablonen maken voor dergelijke pagina's:
  - Een sjabloon voor een overzichtspagina: `page-graphic_terms.php`
  - Een sjabloon voor een detailpagina: `single-graphic_term.php`
 
-> ##### Mappen & Bestanden *:open_file_folder:*{:.pull-left .m-r}
+> ##### Mappen & Bestanden :open_file_folder:
 > ---
 >```
-> cmp.arteveldehogeschool.local/
+> cmp.local/
 > ├── www/
 > │   ├── data/
 > │   ├── scripts/

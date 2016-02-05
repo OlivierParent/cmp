@@ -52,7 +52,7 @@ Je kan wel een **Live voorbeeld** bekijken.
 Thema Ontwikkelen
 -----------------
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Codex / Theme Development](http://codex.wordpress.org/Theme_Development)
 > - [WordPress.org / Codex / Child Themes](http://codex.wordpress.org/Child_Themes)
@@ -70,10 +70,10 @@ Thema Ontwikkelen
 
 Alle geïnstalleerde Thema's staan in de map `themes` 
 
-> ##### Mappen & Bestanden *:open_file_folder:*{:.pull-left .m-r}
+> ##### Mappen & Bestanden :open_file_folder:
 > ---
 >```
-> cmp.arteveldehogeschool.local/
+> cmp.local/
 > ├── www/
 > │   ├── scripts/
 > │   └── wordpress/
@@ -89,7 +89,7 @@ Alle geïnstalleerde Thema's staan in de map `themes`
 
 ### Childthema
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Codex / Child Themes](http://codex.wordpress.org/Child_Themes)
 > - [WordPress.org / Themes / DevDmBootstrap3](https://wordpress.org/themes/devdmbootstrap3)
@@ -124,7 +124,7 @@ Een Thema moet verplicht een aantal bestanden bevatten:
 > ##### Mappen & Bestanden *:open_file_folder:*{:.pull-left .m-r}
 > ---
 >```
-> cmp.arteveldehogeschool.local/
+> cmp.local/
 > ├── www/
 > │   ├── scripts/
 > │   └── wordpress/
@@ -186,7 +186,7 @@ De detailpagina toont de **metagegevens** die we in `styles.css` geplaatst hebbe
 
 ![Childthema 04]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.04.png "Childthema 04"){:.screenshot}
 
-Het actieve Thema kan je op de [website](http://www.cmp.arteveldehogeschool.local) zien. 
+Het actieve Thema kan je op de [website](http://www.cmp.local) zien. 
 
 ![Childthema 05]({{ site.baseurl }}/images/ontwikkeling/thema/arteveldehogeschool.05.png "Childthema 05"){:.screenshot}
 

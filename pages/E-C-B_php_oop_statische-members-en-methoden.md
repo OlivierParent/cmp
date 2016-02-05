@@ -9,7 +9,7 @@ tags      :
 
 Het sleutelwoord `static` wordt gebruikt om member-variabelen en methoden rechtstreeks op klasseniveau te definiëren, en bijgevolg bestaan ze niet op instantieniveau.
 
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ##### **Opgelet** :warning:
 > ---
 > Member-constanten zijn altijd **klasseconstanten** en dus per definitie statisch — en publiek — zodat dit sleutelwoord niet voor constanten gebruikt mag worden.
 {:.alert .alert-warning}

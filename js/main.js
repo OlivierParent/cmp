@@ -41,10 +41,16 @@
         // Highlighter Language Tag
         var $highlights = $('.highlight > pre > code');
         $highlights.each(function () {
-            $(this).parents('.highlight').addClass('language-' + $(this).attr('data-lang'));
+            $(this).parents('.highlight').addClass('language-' + $(this).data('lang'));
         });
-        
-        // Highlighter File Tag
-        $('.highlight span:first-child:contains("file:")').addClass('file');
+
+        // Timeline
+        var $timeline = $('.timeline-content[data-date]');
+        $timeline.each(function () {
+            moment.lang($('html').attr('lang'));
+            var date = moment($(this).data('date')).format('dd D MMM YYYY');
+            var element  = $('<div>').addClass('timeline-date').text(date);
+            $(this).after(element);
+        });
     }
 })();

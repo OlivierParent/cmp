@@ -111,7 +111,7 @@ SELECT
 FROM {tabel};
 {% endhighlight %}
 
-> ##### **Tip** *:bulb:*{:.pull-left .m-r}
+> ##### **Tip** :bulb:
 > ---
 > Gebruik een **alias** (`AS`) om query's in te korten of beter leesbaar te maken. Een alias kan dan doorheen de query gebruikt worden.
 > Er zijn twee soorten:
@@ -152,7 +152,7 @@ SELECT
 FROM {tabel} [AS] {tabelalias};
 {% endhighlight %}
 
-> ##### **Tip** *:bulb:*{:.pull-left .m-r}
+> ##### **Tip** :bulb:
 > ---
 > Gebruik **back ticks** (`` ` ``) als de alias een spatie of een gereserveerd teken of woord bevat.
 {:.alert .alert-info}
@@ -170,7 +170,7 @@ Met het sleutelwoord `LIMIT` kan het aantal rijen uit het queryresultaat beperkt
 Om `{n}` rijen te tonen.
 Met een optionele **offset** kan de selectierij opgegeven worden vanaf waar de `{n}` volgende rijen getoond moeten worden.
 
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ##### **Opgelet** :warning:
 > ---
 > *Microsoft SQL Server* gebruikt hiervoor `TOP`, maar de syntaxis is volledig anders.
 {:.alert .alert-warning}
@@ -239,7 +239,7 @@ Er kan uit meerdere tabellen tegelijk geselecteerd worden.
 
 Hierbij wordt elke rij van de ene tabel met elke rij van de andere tabellen gecombineerd.
 
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ##### **Opgelet** :warning:
 > ---
 > Deze manier van tabellen combineren wordt **afgeraden!**
 {:.alert .alert-warning}
@@ -399,7 +399,7 @@ WHERE first_name LIKE 'T[io]m%';
  - `BETWEEN {min} AND {max}`
  - `NOT BETWEEN {min} AND {max}`
 
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ##### **Opgelet** :warning:
 > ---
 > Zowel de minimum- als maximumwaarde zijn inbegrepen in de selectie!
 {:.alert .alert-warning}
@@ -524,7 +524,7 @@ ORDER BY name DESC;
 Rijen **Bijwerken** [CRUD: Update]
 ----------------------------------
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [MySQL / MySQL 5.6 Reference Manual / UPDATE Syntax](http://dev.mysql.com/doc/refman/5.6/en/update.html)
 {:.card .card-block}
@@ -557,7 +557,7 @@ mysql> UPDATE users
 Rijen **Verwijderen** [CRUD: Delete]
 ------------------------------------
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [MySQL / MySQL 5.6 Reference Manual / DELETE Syntax](http://dev.mysql.com/doc/refman/5.6/en/delete.html)
 {:.card .card-block}

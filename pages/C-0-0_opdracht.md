@@ -47,7 +47,7 @@ Deliverables
 Milestones
 ----------
 
-> ##### Indienen *:checkered_flag:*{:.pull-left .m-r}
+> ##### Indienen :checkered_flag:
 > ---
 > Deliverables **opleveren**.
 >

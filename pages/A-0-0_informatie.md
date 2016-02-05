@@ -36,13 +36,27 @@ De studieomvang bedraagt **6 studiepunten** volgens het [European Credit Transfe
 <div class="ct-chart ct-major-eleventh"></div>
 <script>
 var data = {
-  series: [ 40, 14, 123, 3 ]
+    series: [
+        40,
+        14,
+        123,
+        3
+    ],
+    labels: [
+        'Hoor- en werkcolleges',
+        'Praktijk',
+        'Zelfstudie',
+        'Toets- en examentijd'
+    ]
 };
 var options = {
-  chartPadding: 60,
-  donut: true,
-  labelDirection: 'explode',
-  labelOffset: 40
+    chartPadding: 60,
+    donut: true,
+    donutWidth: 40,
+    labelDirection: 'explode',
+    labelOffset: 40,
+    startAngle: 270,
+    total: data.series.reduce(function (a, b) { return a + b; }, 0) * 2
 };
 new Chartist.Pie('.ct-chart', data, options);
 </script>

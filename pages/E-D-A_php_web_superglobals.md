@@ -6,7 +6,7 @@ published: true
 tags     :
 ---
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [PHP Manual / Language Reference / Predefined Variables / Superglobals](http://php.net/manual/en/language.variables.superglobals.php)
 {:.card .card-block}

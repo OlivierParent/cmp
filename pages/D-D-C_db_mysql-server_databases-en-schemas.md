@@ -230,7 +230,7 @@ Enter password: _
 
 ### Back-up **Importeren**
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [MySQL / MySQL 5.6 Reference Manual / mysqlimport — A Data Import Program](http://dev.mysql.com/doc/refman/5.6/en/mysqlimport.html)
 {:.card .card-block}

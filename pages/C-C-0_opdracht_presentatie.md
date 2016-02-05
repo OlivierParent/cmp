@@ -13,7 +13,7 @@ Tijdens de presentie toon je aan:
 
 Zorg voor een grafisch verzorgde presentatie en verzorgd taalgebruik. Gebruik PowerPoint (of alternatieven zoals [Reveal.js][reveal]), screencasts (zet de koppelingen naar **publieke** streamingdiensten in het PDF-bestand) en live demonstraties.
 
-> ##### **Tip** *:bulb:*{:.pull-left .m-r}
+> ##### **Tip** :bulb:
 > ---
 > Screencasts kan je maken met:
 >

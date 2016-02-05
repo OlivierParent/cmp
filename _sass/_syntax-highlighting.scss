@@ -35,8 +35,7 @@ $code-ts     : $color-F;
 $code-twig   : $color-E;
 $code-yaml   : $color-D;
 
-div.highlight,
-div.linenodiv {
+figure.highlight {
     margin: 2rem 0;
     overflow: auto;
     &.language- {
@@ -96,18 +95,21 @@ div.linenodiv {
         color: inherit;
         padding: 1rem;
         margin: 0;
-        code {
-            span.file:first-child {
-                background-color: $base03;
-                border-radius: 0 0 .3rem;
-                color: #FFF;
-                height: 2rem;
-                left:0;
-                line-height: 2rem;
-                padding: 0 .7rem 0 .5rem;
-                position: absolute;
-                top: 0;
-            }
+    }
+    code {
+        span.file:first-child {
+            background-color: $base03;
+            border-radius: 0 0 .3rem;
+            color: #FFF;
+            height: 2rem;
+            left:0;
+            line-height: 2rem;
+            padding: 0 .7rem 0 .5rem;
+            position: absolute;
+            top: 0;
         }
+    }
+    .lineno {
+        background-color: rgba(255, 255, 255 , .5);
     }
 }

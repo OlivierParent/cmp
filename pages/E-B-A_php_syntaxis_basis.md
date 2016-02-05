@@ -24,7 +24,7 @@ basis/codeafbakening/php.php
 
 Er bestaan nog andere tags, waaronder de populaire **snelschriftversie** en ASP-stijl. Het gebruik ervan wordt echter afgeraden, omdat de ondersteuning ervoor afhankelijk is van de serverinstellingen en er dus voor kan zorgen dat je scripts niet op om het even welke server zullen werken.
 
-> ##### **Opmerking** *:point_up:*{:.pull-left .m-r}
+> ##### **Opmerking** :point_up:
 > ---
 > De snelschriftversie wordt sinds **PHP versie 5.4** standaard ondersteund, zodat het niet langer afhankelijk is van de serverinstellingen.
 {:.alert .alert-info}

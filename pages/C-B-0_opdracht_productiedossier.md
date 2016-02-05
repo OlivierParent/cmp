@@ -6,7 +6,7 @@ published: true
 tags     :
 ---
 
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ##### **Opgelet** :warning:
 > ---
 > - **PDF**-bestand in te dienen samen met de code.
 {:.alert .alert-warning}

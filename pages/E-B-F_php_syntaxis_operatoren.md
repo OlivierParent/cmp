@@ -24,7 +24,7 @@ basis/operator/unair.php
 {% include_relative _code/php/basis/operator/unair.php %}
 {% endhighlight %}
 
-> ##### **Tip** *:bulb:*{:.pull-left .m-r}
+> ##### **Tip** :bulb:
 > ---
 > Een pre-operator is (in PHP) sneller dan een post-operator. Gebruik daarom bij voorkeur de pre-operator.
 {:.alert .alert-info}
@@ -75,7 +75,7 @@ In onderstaande tabel zijn de operatoren opgelijst volgens prioriteit. De eerste
 |         →         | `or`                       | logische `OR`                                              |     2     |
 {:.table .table-striped}
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [PHP Manual / Language Reference / Operators](http://php.net/manual/en/language.operators.precedence.php)
 {:.card .card-block}

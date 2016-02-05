@@ -11,7 +11,7 @@ Specificaties
 
 ### Technische Specificaties
 
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ##### **Opgelet** :warning:
 > ---
 >
 > - Onderstaande technologieën **moeten** toegepast worden om te kunnen slagen voor dit opleidingsonderdeel.
@@ -26,7 +26,7 @@ Specificaties
    - [PHP][php]
    - [MySQL][mysql]
 
-> ##### **Tip** *:bulb:*{:.pull-left .m-r}
+> ##### **Tip** :bulb:
 > ---
 > IDE's, editors en GUI-tools zijn vrij te kiezen. Enkele suggesties:
 >

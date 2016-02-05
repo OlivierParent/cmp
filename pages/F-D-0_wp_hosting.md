@@ -7,7 +7,7 @@ published : false
 tags      :
 ---
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / About / Requirements](https://wordpress.org/about/requirements/)
 > - [WordPress.org / Support / Codex / Moving WordPress](http://codex.wordpress.org/Moving_WordPress)

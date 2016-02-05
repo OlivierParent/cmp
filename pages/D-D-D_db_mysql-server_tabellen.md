@@ -30,7 +30,7 @@ mysql> _
 Tabel **Maken**
 ---------------
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [MySQL / MySQL 5.6 Reference Manual / CREATE TABLE Syntax](http://dev.mysql.com/doc/refman/5.6/en/create-table.html)
 {:.card .card-block}
@@ -56,7 +56,7 @@ mysql> CREATE TABLE IF NOT EXISTS `users` (
     -> );
 {% endhighlight %}
 
-> ##### **Tip** *:bulb:*{:.pull-left .m-r}
+> ##### **Tip** :bulb:
 > ---
 > Vraag het  `CREATE`-statement van de tabel op met  `SHOW CREATE TABLE`.
 > Hiermee kan je:
@@ -73,7 +73,7 @@ SHOW CREATE TABLE {tabel};
 Tabel **Omschrijven**
 ---------------------
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [MySQL / MySQL 5.6 Reference Manual / EXPLAIN Syntax](http://dev.mysql.com/doc/refman/5.6/en/explain.html)
 {:.card .card-block}
@@ -101,7 +101,7 @@ mysql> EXPLAIN users;
 Tabel **Wijzigen**
 ------------------
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [MySQL / MySQL 5.6 Reference Manual / ALTER TABLE Syntax](http://dev.mysql.com/doc/refman/5.6/en/alter-table.html)
 {:.card .card-block} 
@@ -287,7 +287,7 @@ ALTER TABLE {tabel_A}
  - `CONSTRAINT CHECK`
    - Expressie waaraan voldaan moet worden.
 
-> ##### **Opgelet** *:warning:*{:.pull-left .m-r}
+> ##### **Opgelet** :warning:
 > ---
 > Voorlopig in nog geen enkele storage engine van MySQL geïmplementeerd. Gebruik een `TRIGGER` om hetzelfde effect te bereiken.
 {:.alert .alert-warning}
@@ -306,7 +306,7 @@ ALTER TABLE users
 Tabel **Leegmaken**
 -------------------
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [MySQL / MySQL 5.6 Reference Manual / TRUNCATE TABLE Syntax](http://dev.mysql.com/doc/refman/5.6/en/truncate-table.html)
 {:.card .card-block}

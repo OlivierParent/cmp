@@ -145,10 +145,14 @@ blockquote {
     &.card[id] {
         padding-bottom: 0;
     }
+    .emoji {
+        float: left;
+        margin-right: .5em;
+    }
 }
 
-img.screenshot {
-    box-shadow: 0 3px 5px 1px #999;
+.screenshot {
+    box-shadow: 0 3px 5px 1px #999; 
     max-width: 100%;
 }
 
@@ -172,7 +176,6 @@ body {
         }
     }
 }
-
 
 .ahs- {
     &oranje {
@@ -226,6 +229,117 @@ body {
         }
         &e {
             @include donut-stroke($color-ahs-donkergrijs);
+        }
+    }
+}
+
+.timeline {
+    position: relative;
+    &::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+    &::before {
+        background-color: linen;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        width: 5px;
+    }
+    .timeline-icon i {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        border: 5px solid linen;
+        border-radius: 50%;
+        background-color: white;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .timeline-point {
+        &:nth-child(even) {
+            .timeline-date {
+                float: left;
+                text-align: right;
+            }
+            .timeline-content {
+                float: right;
+                &::before {
+                    border-right-color: cornflowerblue;
+                    border-left: none;
+                    left: -.7rem;
+                }
+            }
+        }
+        &:nth-child(odd) {
+            .timeline-date {
+                float: right;
+                text-align: left;
+            }
+            .timeline-content {
+                float: left;
+                 &::before {
+                    border-left-color: cornflowerblue;
+                    border-right: none;
+                    right: -.7rem;
+                }
+            }
+        }
+        .timeline-date,
+        .timeline-content {
+            width: 47%;
+        }
+        .timeline-date {
+            font-weight: bold;
+            line-height: 3rem;
+        }
+        .timeline-content {
+            position: relative;
+            background-color: aliceblue;
+            border: .2rem solid cornflowerblue;
+            border-radius: .4rem;
+            // box-shadow: -1px 3px 3px hsla(0, 0%, 0%, .1);
+            padding: 1rem;
+            h1 {
+                font-size: 1.4rem;
+                margin: 0;
+            }
+            &::before {
+                content: "";
+                border: .7rem solid transparent;
+                position: absolute;
+                top: .7rem;
+            }
+        }
+    }
+    .timeline-point {
+        &::before {
+            background-color: white;
+            border: 5px solid linen;
+            border-radius: 50%;
+            content: "";
+            height: 1rem;
+            left: 0;
+            margin: 1rem auto;
+            position: absolute;
+            right: 0;
+            width: 1rem;
+        }
+        &::after {
+            clear: both;
+            content: "";
+            display: table;
+            margin: 30px;
         }
     }
 }

@@ -32,7 +32,7 @@ Als de Plugins bijgewerkt zijn, kan je naar een andere pagina gaan.
 Plugin Ontwikkelen
 ------------------
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress / Developer Resources / Plugin Handbook](https://developer.wordpress.org/plugins/)
 {:.card .card-block}
@@ -71,7 +71,7 @@ We maken een nieuwe Plugin met de naam `arteveldehogeschool_lexicon`. Dit doen w
 > ##### Mappen & Bestanden *:open_file_folder:*{:.pull-left .m-r}
 > ---
 >```
-> cmp.arteveldehogeschool.local/
+> cmp.local/
 > ├── www/
 > │   ├── data/
 > │   │   └── graphic_terms.csv
@@ -148,7 +148,7 @@ Maak met een teksteditor het bestand `graphic_term-nl_NL.po` en geeft het deze i
 
 ##### Vertaalbestanden Inladen
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `load_plugin_textdomain()`](https://developer.wordpress.org/reference/functions/load_plugin_textdomain/)
 > - [PHP / Manual / Function Reference / `dirname()`](http://php.net/manual/en/function.dirname.php)
@@ -163,7 +163,7 @@ Bovenaan in `arteveldehogeschool_lexicon.php` gaan we de vertalingen inladen met
 
 ##### Vertalingen Toepassen
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `__()`](https://developer.wordpress.org/reference/functions/__/)
 > - [WordPress.org / Code Reference / Functions / `_x()`](https://developer.wordpress.org/reference/functions/_x/)
@@ -191,7 +191,7 @@ We maken nieuwe functie om de Custom Post Type voor een 'grafische term' te regi
 
 ##### Hook
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `add_action()`](https://developer.wordpress.org/reference/functions/add_action/)
 > - [WordPress.org / Code Reference / Hooks / `init`](https://developer.wordpress.org/reference/hooks/init/)
@@ -213,7 +213,7 @@ Vanaf nu verschijnt er een nieuw menu-item 'Grafische termen' in het Dashboard.
 
 ##### Functie om Meta Box te tonen en toevoegen
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `get_post_meta()`](https://developer.wordpress.org/reference/functions/get_post_meta/)
 > - [WordPress.org / Code Reference / Functions / `esc_html()`](https://developer.wordpress.org/reference/functions/esc_html/)
@@ -232,7 +232,7 @@ Onder het tekstgebied voor de inhoud moeten nog 3 inputvelden getoond worden in 
 
 ##### Functie om Meta Box toe te voegen
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `add_meta_box()`](https://developer.wordpress.org/reference/functions/add_meta_box/)
 {:.card .card-block}
@@ -247,7 +247,7 @@ We geven de Meta Box de titel 'Translations' die naar het Nederlands vertaald wo
 
 ##### Hook
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `add_action()`](https://developer.wordpress.org/reference/functions/add_action/)
 > - [WordPress.org / Code Reference / Hooks / `admin_init`](https://developer.wordpress.org/reference/hooks/admin_init/)
@@ -268,7 +268,7 @@ Vanaf nu verschijnt de metabox **Vertalingen**:
 
 ##### Functie
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [PHP / Manual / Function Reference / `isset()`](http://php.net/manual/en/function.isset.php)
 > - [PHP / Manual / Function Reference / `empty()`](http://php.net/manual/en/function.empty.php)
@@ -286,7 +286,7 @@ Voordat de gegevens opgeslagen kan worden moeten we vermijden dat schadelijke co
 
 ##### Hook
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `add_action()`](https://developer.wordpress.org/reference/functions/add_action/)
 > - [WordPress.org / Code Reference / Hooks / `save_post`](https://developer.wordpress.org/reference/hooks/save_post/)
@@ -306,7 +306,7 @@ De functie heeft 2 parameters (`$graphic_term_id` en `$graphic_term`) die elk al
 
 Deze functie maakt een uploadpagina met formulier en verwerkt het formulier waneer het verstuurd is. Er wordt enkel een nieuwe grafische term toegevoegd als die nog niet in de database bestaat. De controle gebeurt met de functie `post_graphic_term_exists()` (zie 2.7.4).
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [PHP / Manual / Function Reference / `isset()`](http://php.net/manual/en/function.isset.php)
 > - [PHP / Manual / Function Reference / `ini_set()`](http://php.net/manual/en/function.ini-set.php)
@@ -324,7 +324,7 @@ Deze functie maakt een uploadpagina met formulier en verwerkt het formulier wane
 
 ##### Functie om een menu-item toe te voegen
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `add_menu_page()`](https://developer.wordpress.org/reference/functions/add_menu_page/)
 > - [WordPress.org / Code Reference / Functions / `add_submenu_page()`](https://developer.wordpress.org/reference/functions/add_submenu_page/)
@@ -338,7 +338,7 @@ Deze functie voegt een menu-item voor de uploadpagina toe aan het menu. De funct
 
 ##### Hook
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `add_action()`](https://developer.wordpress.org/reference/functions/add_action/)
 > - [WordPress.org / Code Reference / Hooks / `admin_menu`](https://developer.wordpress.org/reference/hooks/admin_menu/)
@@ -356,7 +356,7 @@ Nu verschijnt het menu-item **Grafische termen uploaden**:
 
 ##### Functie om te controleren of een grafische term al bestaat in de database
 
-> ##### Zie ook *:books:*{:.pull-left .m-r}
+> ##### Zie ook :books:
 > ---
 > - [WordPress.org / Code Reference / Functions / `post_exists()`](https://developer.wordpress.org/reference/functions/post_exists/)
 > - [WordPress.org / Code Reference / Functions / `sanitize_post_field()`](https://developer.wordpress.org/reference/functions/sanitize_post_field/)
